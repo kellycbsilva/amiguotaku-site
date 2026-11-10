@@ -24,43 +24,43 @@ function fotos(pasta, n) {
 window.AMIGU_PRODUTOS = [
   /* ---------------- RPG / 3D ---------------- */
   {
-    id: "case-d20", nome: "Case D20 magnético", categorias: ["rpg", "3d"], preco: "R$ 52,00", destaque: true,
+    id: "case-d20", nome: "Case D20 magnético", categorias: ["rpg", "3d"], preco: "R$ 50,00", destaque: true,
     resumo: "Porta-dados em formato de D20 gigante, com fechamento por ímãs.",
     descricao: "Guarde seus dados com estilo dentro de um D20 gigante! Fechamento magnético firme e fácil de abrir, espaço interno para vários dados ou conjuntos completos, impressão 3D de alta qualidade. Cores variadas: preto, vermelho, amarelo, azul e metalizados.",
     fotos: fotos("case-d20", 12), sumup: "case-d20", video: "videos/case-d20.mp4"
   },
   {
-    id: "case-classes", nome: "Case de dados com classes", categorias: ["rpg", "3d"], preco: "R$ 50,00", destaque: true,
+    id: "case-classes", nome: "Case de dados com classes", categorias: ["rpg", "3d"], preco: "R$ 45,00", destaque: true,
     resumo: "Case redonda para 7 dados, com a classe do seu personagem gravada na tampa.",
     descricao: "Compartimentos individuais para até 7 dados poliédricos e tampa de encaixe com a classe à sua escolha (bárbaro, mago, ladino, clérigo e mais). Resistente, compacta e ótima para presentear jogadores e mestres. Ideal para D&D, Tormenta20, Pathfinder e outros sistemas.",
     fotos: fotos("case-para-dados-rpg", 8), sumup: "case-para-dados-rpg"
   },
   {
-    id: "torre-de-dados", nome: "Torre de dados medieval", categorias: ["rpg", "3d"], preco: "R$ 55,00", destaque: true,
+    id: "torre-de-dados", nome: "Torre de dados medieval", categorias: ["rpg", "3d"], preco: "R$ 50,00", destaque: true,
     resumo: "Torre roladora em formato de castelo, com acabamento metálico.",
     descricao: "Rampa interna que garante rolagens justas e cheias de impacto. Impressa em 3D com acabamento metálico e cores personalizáveis sob encomenda (o degradê roxo e dourado faz sucesso!). Tamanho compacto, cabe na mochila.",
     fotos: fotos("torre-de-dados", 9), sumup: "torre-de-dados", video: "videos/torre-de-dados.mp4"
   },
   {
-    id: "torre-dragao", nome: "Torre do Dragão", categorias: ["rpg", "3d"], preco: "Sob encomenda", destaque: true, novo: true,
+    id: "torre-dragao", nome: "Torre Fortaleza Dragão", categorias: ["rpg", "3d"], preco: "R$ 180,00", destaque: true, novo: true,
     resumo: "Torre de dados com um dragão no topo e bandeja de rolagem.",
     descricao: "Versão épica da torre de dados, com um dragão guardando o castelo. Peça de centro de mesa para mestres e colecionadores. Cores e acabamento a combinar.",
-    fotos: fotos("torre-dragao", 8), video: "videos/torre-dragao.mp4"
+    fotos: fotos("torre-dragao", 8), sumup: "torre-fortaleza-dragao", video: "videos/torre-dragao.mp4"
   },
   {
-    id: "case-grimorio", nome: "Case Grimório", categorias: ["rpg", "3d"], preco: "Sob encomenda", destaque: true, novo: true,
+    id: "case-grimorio", nome: "Case Grimório Livro Torre", categorias: ["rpg", "3d"], preco: "R$ 80,00", destaque: true, novo: true,
     resumo: "Porta-dados em formato de livro de magias que abre como um tomo.",
     descricao: "Um grimório que esconde seus dados! Abre como um livro e tem encaixes para o conjunto completo. Disponível com capa de D20 e outras artes. Cores a combinar.",
-    fotos: fotos("case-grimorio", 10), video: "videos/case-grimorio.mp4"
+    fotos: fotos("case-grimorio", 10), sumup: "case-grimorio-livro-torre", video: "videos/case-grimorio.mp4"
   },
   {
-    id: "case-retangular", nome: "Estojo retangular para dados", categorias: ["rpg", "3d"], preco: "R$ 35,00",
+    id: "case-retangular", nome: "Estojo retangular para dados", categorias: ["rpg", "3d"], preco: "R$ 30,00",
     resumo: "Estojo com encaixes moldados para os 7 dados (D4 a D20).",
     descricao: "Estojo resistente e compacto com fechamento por trava e encaixe individual para cada dado, protegendo contra impactos e arranhões. Várias cores. Dados vendidos separadamente.",
     fotos: fotos("case-retangular", 10), sumup: "case-retangular"
   },
   {
-    id: "kit-de-dados", nome: "Kit de dados perolados", categorias: ["rpg"], preco: "R$ 39,00",
+    id: "kit-de-dados", nome: "Kit de dados perolados", categorias: ["rpg"], preco: "R$ 35,00",
     resumo: "Conjunto com os 7 dados clássicos: D4, D6, D8, D10, D%, D12 e D20.",
     descricao: "Dados com acabamento perolado e numeração de alta legibilidade, em diversas cores. Combine com uma case ou torre para uma experiência completa.",
     fotos: fotos("kit-de-dados-para-rpg", 5), sumup: "kit-de-dados-para-rpg"
@@ -68,10 +68,10 @@ window.AMIGU_PRODUTOS = [
 
   /* ---------------- Torres e peças 3D (fotos da pasta Rpg 1) ---------------- */
   {
-    id: "torre-dragao-verde", nome: "Torre Dragão Verde", categorias: ["rpg", "3d"], preco: "Sob encomenda", destaque: true, novo: true,
+    id: "torre-dragao-verde", nome: "Torre Dragão Verde Boca Aberta", categorias: ["rpg", "3d"], preco: "R$ 150,00", destaque: true, novo: true,
     resumo: "Um dragão enrolado guarda a bandeja de rolagem.",
     descricao: "Torre de dados em formato de dragão, com escamas detalhadas e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda.",
-    fotos: fotos("torre-dragao-verde", 8), video: "videos/torre-dragao-verde.mp4"
+    fotos: fotos("torre-dragao-verde", 8), sumup: "torre-dragao-verde-boca-aberta", video: "videos/torre-dragao-verde.mp4"
   },
   {
     id: "torre-arvore", nome: "Torre de Dados Árvore Antiga", categorias: ["rpg", "3d"], preco: "R$ 120,00", novo: true,
@@ -92,28 +92,28 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("torre-calice", 5), sumup: "torre-de-dados-calice-do-paladino", video: "videos/torre-calice.mp4"
   },
   {
-    id: "torre-espiral", nome: "Torre Escadaria Espiral", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-espiral", nome: "Torre de Dados Escada Externa Espiral", categorias: ["rpg", "3d"], preco: "R$ 60,00", novo: true,
     resumo: "Os dados descem por uma escada em caracol até a bandeja.",
     descricao: "Torre de dados com escadaria em caracol: dá para ver cada dado descendo degrau por degrau. Em azul metálico e outras cores.",
-    fotos: fotos("torre-espiral", 2), video: "videos/torre-espiral.mp4"
+    fotos: fotos("torre-espiral", 2), sumup: "torre-de-dados-escada-externa-espiral", video: "videos/torre-espiral.mp4"
   },
   {
-    id: "torre-escadaria-branca", nome: "Torre Escadaria Branca", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-escadaria-branca", nome: "Torre Escada Externa Espiral Melhorada", categorias: ["rpg", "3d"], preco: "R$ 100,00", novo: true,
     resumo: "Torre com escadaria externa e bandeja, em branco perolado.",
     descricao: "Torre de dados com escadaria externa e bandeja de rolagem. Cores sob encomenda.",
-    fotos: fotos("torre-escadaria-branca", 3), video: "videos/torre-escadaria-branca.mp4"
+    fotos: fotos("torre-escadaria-branca", 3), sumup: "torre-escada-externa-espiral-melhorada", video: "videos/torre-escadaria-branca.mp4"
   },
   {
-    id: "torre-castelo-negro", nome: "Torre Castelo Sombrio", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-castelo-negro", nome: "Castelo Sombrio", categorias: ["rpg", "3d"], preco: "R$ 180,00", novo: true,
     resumo: "Ruínas de um castelo escuro com bandeja de rolagem.",
     descricao: "Torre de dados em formato de castelo em ruínas, em preto fosco. Clima perfeito para campanhas sombrias.",
-    fotos: fotos("torre-castelo-negro", 4), video: "videos/torre-castelo-negro.mp4"
+    fotos: fotos("torre-castelo-negro", 4), sumup: "castelo-sombrio", video: "videos/torre-castelo-negro.mp4"
   },
   {
-    id: "torre-sombria", nome: "Torre Sombria", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-sombria", nome: "Torre Sombria", categorias: ["rpg", "3d"], preco: "R$ 80,00", novo: true,
     resumo: "Torre alta e pontiaguda, de vilão de fim de campanha.",
     descricao: "Torre de dados alta, em preto, com pináculo pontiagudo. Imponente no centro da mesa.",
-    fotos: fotos("torre-sombria", 4), video: "videos/torre-sombria.mp4"
+    fotos: fotos("torre-sombria", 4), sumup: "torre-sombria", video: "videos/torre-sombria.mp4"
   },
   {
     id: "torre-observador", nome: "Torre de Dados Beholder sobre Pedra", categorias: ["rpg", "3d"], preco: "R$ 200,00", novo: true,
@@ -128,24 +128,24 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("torre-monge", 3), sumup: "torre-de-dados-mestre-dos-magos", video: "videos/torre-monge.mp4"
   },
   {
-    id: "dragao-articulado", nome: "Dragão articulado", categorias: ["3d", "nerd"], preco: "Sob encomenda", destaque: true, novo: true,
+    id: "dragao-articulado", nome: "Dragão Três Cabeças", categorias: ["3d", "nerd"], preco: "R$ 80,00", destaque: true, novo: true,
     resumo: "Dragão impresso em 3D que mexe o corpo, as asas e a cauda.",
     descricao: "Dragão articulado impresso em 3D, com movimento no corpo e nas asas. Em azul e verde metálicos e outras cores. Ótimo para decorar a mesa ou presentear.",
-    fotos: fotos("dragao-articulado", 5), video: "videos/dragao-articulado.mp4"
+    fotos: fotos("dragao-articulado", 5), sumup: "dragao-tres-cabecas", video: "videos/dragao-articulado.mp4"
   },
 
   /* ---------------- TCG ---------------- */
   {
-    id: "deckbox-energias", nome: "Deck box Energias", categorias: ["tcg", "3d"], preco: "Sob encomenda", destaque: true, novo: true,
+    id: "deckbox-energias", nome: "Deck Box Energias", categorias: ["tcg", "3d"], preco: "R$ 60,00", destaque: true, novo: true,
     resumo: "Deck box preta com símbolos de tipos de energia em relevo colorido.",
     descricao: "Caixa para deck impressa em 3D, com tampa de encaixe e símbolos de energia em amarelo ou laranja. Comporta um deck com sleeves.",
-    fotos: fotos("deckbox-energias", 5)
+    fotos: fotos("deckbox-energias", 5), sumup: "deck-box-energias"
   },
   {
-    id: "deckbox-pokebola", nome: "Deck box Pokébola", categorias: ["tcg", "3d"], preco: "Sob encomenda", destaque: true, novo: true,
+    id: "deckbox-pokebola", nome: "Deck Box Pokébola", categorias: ["tcg", "3d"], preco: "R$ 60,00", destaque: true, novo: true,
     resumo: "Deck box com arte de Pokébola e personagem na tampa.",
     descricao: "Caixa para deck impressa em 3D com estampa na tampa. Escolha a arte e as cores do seu time.",
-    fotos: fotos("deckbox-pokebola", 3)
+    fotos: fotos("deckbox-pokebola", 3), sumup: "deck-box-pokebola"
   },
   {
     id: "deckbox-grande", nome: "Porta Deck MTG Commander com Logo", categorias: ["tcg", "3d"], preco: "R$ 60,00", destaque: true, novo: true,
@@ -154,10 +154,10 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("deckbox-grande", 4), sumup: "porta-deck-mtg-commander-com-logo"
   },
   {
-    id: "deckbox-bandeja", nome: "Caixa D&D com bandeja de dados", categorias: ["tcg", "rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "deckbox-bandeja", nome: "Case D&D", categorias: ["rpg", "3d"], preco: "R$ 40,00", novo: true,
     resumo: "Caixa temática com bandeja que guarda os dados em pé.",
     descricao: "Caixa impressa em 3D com bandeja interna para dados, em verde e azul. Organiza cartas e dados num só lugar.",
-    fotos: fotos("deckbox-bandeja", 3)
+    fotos: fotos("deckbox-bandeja", 3), sumup: "case-dandd"
   },
   /* TCG: espaços reservados */
   {
