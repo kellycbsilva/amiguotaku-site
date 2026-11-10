@@ -68,10 +68,16 @@ window.AMIGU_PRODUTOS = [
 
   /* ---------------- Torres e peças 3D (fotos da pasta Rpg 1) ---------------- */
   {
-    id: "torre-dragao-verde", nome: "Torre Dragão Verde Boca Aberta", categorias: ["rpg", "3d"], preco: "R$ 150,00", destaque: true, novo: true,
-    resumo: "Um dragão enrolado guarda a bandeja de rolagem.",
-    descricao: "Torre de dados em formato de dragão, com escamas detalhadas e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda.",
-    fotos: fotos("torre-dragao-verde", 8), sumup: "torre-dragao-verde-boca-aberta", video: "videos/torre-dragao-verde.mp4"
+    id: "torre-dragao-verde-caveira", nome: "Torre Dragão Verde Caveira", categorias: ["rpg", "3d"], preco: "R$ 150,00", destaque: true, novo: true,
+    resumo: "Uma caveira de dragão de boca aberta guarda a bandeja de rolagem.",
+    descricao: "Torre de dados em formato de caveira de dragão de boca aberta, com chifres e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda.",
+    fotos: fotos("torre-dragao-verde-caveira", 3), sumup: "torre-dragao-verde-caveira", video: "videos/torre-dragao-verde-caveira.mp4"
+  },
+  {
+    id: "torre-dragao-verde", nome: "Torre Dragão Verde", categorias: ["rpg", "3d"], preco: "R$ 150,00", destaque: true, novo: true,
+    resumo: "Um dragão de escamas detalhadas guarda a bandeja de rolagem.",
+    descricao: "Torre de dados em formato de cabeça de dragão de boca aberta, com escamas bem detalhadas e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda.",
+    fotos: fotos("torre-dragao-verde", 5), sumup: "torre-dragao-verde", video: "videos/torre-dragao-verde.mp4"
   },
   {
     id: "torre-arvore", nome: "Torre de Dados Árvore Antiga", categorias: ["rpg", "3d"], preco: "R$ 120,00", novo: true,
