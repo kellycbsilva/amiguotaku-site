@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encomendas · Amigu Otaku</title>
+<meta name="description" content="Encomende seu amigurumi ou acessório de RPG e TCG personalizado na Amigu Otaku.">
+<link rel="icon" href="img/marca/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="encomendas">
+<header id="topo"></header>
+
+<main>
+  <section class="pagina-cab">
+    <div class="container">
+      <span class="eyebrow">Sob encomenda</span>
+      <h1>Seu Amigu sob medida</h1>
+      <p class="lead">Já pensou em ter aquele personagem que você ama e não encontra em lugar nenhum? Ou uma case com a classe e as cores do seu personagem? Deixa com a gente!</p>
+      <img class="mascote" src="img/mascote/pose-32.png" alt="">
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container duas-col">
+      <div>
+        <h2>O que dá pra encomendar</h2>
+        <ul class="lista-check">
+          <li><b>Amigurumis</b> de personagens de anime, games, filmes, séries ou até do seu pet.</li>
+          <li><b>Cases e torres de dados</b> com a classe, o símbolo ou as cores que você escolher.</li>
+          <li><b>Deck boxes e acessórios de TCG</b> no tema do seu baralho.</li>
+          <li><b>Organizadores de board game</b> sob medida para a caixa do jogo.</li>
+          <li><b>Presentes para mestres e jogadores</b>, com embalagem caprichada.</li>
+        </ul>
+        <h3>Como funciona</h3>
+        <p>Preencha o formulário ao lado. Ele abre o WhatsApp com a sua mensagem pronta, é só enviar. Respondemos com orçamento, prazo e opções de cores.</p>
+        <img src="img/classes/grupo.jpg" alt="O mascote Amigu em várias classes de RPG" style="border:var(--borda);border-radius:var(--raio);box-shadow:var(--sombra);margin-top:24px" loading="lazy">
+      </div>
+
+      <form class="form" id="form-encomenda">
+        <h2 style="margin:0">Monte seu pedido</h2>
+        <div class="dupla">
+          <label>Seu nome<input name="nome" required autocomplete="given-name"></label>
+          <label>Cidade / Estado<input name="cidade" autocomplete="address-level2"></label>
+        </div>
+        <label>O que você quer?
+          <select name="tipo">
+            <option>Amigurumi</option>
+            <option>Case ou torre de dados (RPG)</option>
+            <option>Acessório de TCG</option>
+            <option>Organizador de board game</option>
+            <option>Outro produto 3D</option>
+          </select>
+        </label>
+        <label>Personagem, classe ou jogo<input name="ref" placeholder="Ex.: Stitch, Mago, Pokémon TCG, Catan…"></label>
+        <div class="dupla">
+          <label>Cores preferidas<input name="cores" placeholder="Ex.: roxo e dourado"></label>
+          <label>Para quando?<input name="prazo" placeholder="Ex.: aniversário em março"></label>
+        </div>
+        <label>Detalhes<textarea name="detalhes" rows="4" placeholder="Tamanho, referência, se é presente…"></textarea></label>
+        <button class="btn btn-whats" type="submit" style="justify-self:start">Enviar pelo WhatsApp</button>
+        <p style="margin:0;font-size:.85rem;color:var(--tinta-suave)">Nenhum dado fica salvo no site: a mensagem vai direto para o nosso WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer id="rodape"></footer>
+
+<script src="js/config.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/app.js"></script>
+<script>
+document.getElementById("form-encomenda").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var f = new FormData(this);
+  var linhas = ["Oi, Amigu Otaku! Quero fazer uma encomenda 😊", "",
+    "Nome: " + f.get("nome"),
+    f.get("cidade") ? "Cidade: " + f.get("cidade") : "",
+    "Tipo: " + f.get("tipo"),
+    f.get("ref") ? "Personagem/classe/jogo: " + f.get("ref") : "",
+    f.get("cores") ? "Cores: " + f.get("cores") : "",
+    f.get("prazo") ? "Para quando: " + f.get("prazo") : "",
+    f.get("detalhes") ? "Detalhes: " + f.get("detalhes") : ""
+  ].filter(function (l, i) { return l !== "" || i === 1; });
+  window.open(amiguWhats(linhas.join("\n")), "_blank", "noopener");
+});
+</script>
+</body>
+</html>

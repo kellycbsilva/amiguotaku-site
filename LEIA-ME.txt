@@ -1,0 +1,27 @@
+SITE NOVO AMIGU OTAKU (vitrine / portfólio) — versão 1, 10/11/2026
+=====================================================================
+
+COMO VER NO COMPUTADOR
+  1. Clique com o botão direito em "ver-site-local.ps1" > Executar com o PowerShell.
+  2. Abra http://localhost:8765 no navegador.
+  (Dá para abrir o index.html direto com dois cliques também; só as fontes vêm da internet.)
+
+PÁGINAS
+  index.html        Início: RPG em destaque, classes do mascote, linha TCG, amigurumis, encomendas, eventos, sobre
+  catalogo.html     Catálogo com filtros (RPG, TCG, Board Games, 3D, Amigurumis, Nerd). Links diretos: catalogo.html?cat=rpg
+  amigurumis.html   Galeria com os 63 amigurumis do lote da loja
+  encomendas.html   Formulário que monta a mensagem e abre o WhatsApp (nada fica salvo no site)
+
+ONDE EDITAR (sem mexer no visual)
+  js/config.js   Endereço da LOJA ONLINE (aba "Loja online"), WhatsApp, Instagram, Facebook
+  js/dados.js    Produtos (nome, preço, descrição, fotos), nomes da galeria de amigurumis e frases das classes
+                 Itens com placeholder: true aparecem como "Espaço reservado · aguardando fotos"
+  css/style.css  Cores e estilo (paleta no topo do arquivo)
+  img/           Fotos já reduzidas para web (5,5 MB no total)
+
+ESPAÇOS RESERVADOS (aguardando material)
+  - TCG: deck box 3D, marcadores/contadores, playmats, sleeves/binders
+  - Board games: organizadores, porta-cartas
+  - Eventos: próximo evento (data, nome, local)
+  - Nomes dos amigurumis sem legenda na galeria
+  - Texto "Quem faz" (seção Sobre) é provisório: revisar

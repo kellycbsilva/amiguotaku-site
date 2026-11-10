@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo · Amigu Otaku</title>
+<meta name="description" content="Catálogo Amigu Otaku: acessórios de RPG e TCG em 3D, organizadores de board game e amigurumis.">
+<link rel="icon" href="img/marca/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="catalogo">
+<header id="topo"></header>
+
+<main>
+  <section class="pagina-cab">
+    <div class="container">
+      <span class="eyebrow">Vitrine</span>
+      <h1 id="titulo">Catálogo</h1>
+      <p class="lead" id="subtitulo">Tudo o que a Amigu Otaku produz. Clique em um item para ver as fotos e chamar a gente no WhatsApp. Os itens com o botão “Comprar agora” podem ser comprados na hora.</p>
+      <img class="mascote" src="img/mascote/pose-35.png" alt="">
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:40px">
+    <div class="container">
+      <div class="filtros" id="filtros" role="group" aria-label="Filtrar por categoria"></div>
+      <div class="grade" id="grade"></div>
+      <p id="vazio" class="lead" hidden>Nada por aqui ainda.</p>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="container">
+      <div class="cta">
+        <img src="img/mascote/pose-17.png" alt="">
+        <div>
+          <h2>Não achou o que procura?</h2>
+          <p class="lead" style="color:var(--tinta)">Fazemos peças sob encomenda: cores, classes, personagens e tamanhos do seu jeito.</p>
+          <div class="botoes">
+            <a class="btn btn-magenta" href="encomendas.html">Pedir sob encomenda</a>
+            <a class="btn" href="catalogo.html">Ver tudo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="rodape"></footer>
+
+<script src="js/config.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/app.js"></script>
+<script>
+(function () {
+  var TEXTOS = {
+    todos: ["Catálogo", "Tudo o que a Amigu Otaku produz. Clique em um item para ver as fotos e chamar a gente no WhatsApp. Os itens com o botão “Comprar agora” podem ser comprados na hora."],
+    rpg: ["Acessórios de RPG", "Cases, torres, grimórios e dados impressos em 3D para deixar sua mesa épica. Cores personalizáveis sob encomenda."],
+    tcg: ["Linha TCG", "Deck boxes impressas em 3D e, em breve, mais acessórios para jogadores de cartas: contadores, playmats e organização."],
+    boardgame: ["Board Games", "Organizadores e acessórios impressos sob medida para a caixa do seu jogo favorito."],
+    "3d": ["Produtos 3D", "Tudo o que sai da nossa impressora 3D, com acabamento caprichado."],
+    amigurumi: ["Amigurumis", "Personagens feitos à mão em crochê, com algodão sustentável."],
+    nerd: ["Nerd & Geek", "Animes, games, filmes e séries em versão fofinha."]
+  };
+  var filtros = document.getElementById("filtros"), grade = document.getElementById("grade");
+  var atual = new URLSearchParams(location.search).get("cat") || "todos";
+  if (!TEXTOS[atual]) atual = "todos";
+
+  filtros.innerHTML = AMIGU_CATEGORIAS.map(function (c) {
+    return '<button type="button" data-cat="' + c.id + '">' + c.nome + "</button>";
+  }).join("");
+
+  function mostrar(cat) {
+    atual = cat;
+    filtros.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-cat") === cat); });
+    var lista = AMIGU_PRODUTOS.filter(function (p) { return cat === "todos" || p.categorias.indexOf(cat) > -1; });
+    // itens reais primeiro, espaços reservados no fim
+    lista.sort(function (a, b) { return (a.placeholder ? 1 : 0) - (b.placeholder ? 1 : 0); });
+    amiguRender(grade, lista);
+    document.getElementById("vazio").hidden = lista.length > 0;
+    document.getElementById("titulo").textContent = TEXTOS[cat][0];
+    document.getElementById("subtitulo").textContent = TEXTOS[cat][1];
+    document.title = TEXTOS[cat][0] + " · Amigu Otaku";
+    var url = cat === "todos" ? "catalogo.html" : "catalogo.html?cat=" + cat;
+    try { history.replaceState(null, "", url); } catch (e) {}
+    document.querySelectorAll(".menu a").forEach(function (a) {
+      var h = a.getAttribute("href");
+      if (h === url || (cat === "todos" && h === "catalogo.html")) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
+  }
+  filtros.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (b) mostrar(b.getAttribute("data-cat"));
+  });
+  mostrar(atual);
+})();
+</script>
+</body>
+</html>
