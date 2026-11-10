@@ -74,22 +74,22 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("torre-dragao-verde", 8), video: "videos/torre-dragao-verde.mp4"
   },
   {
-    id: "torre-arvore", nome: "Torre Árvore Ancestral", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-arvore", nome: "Torre de Dados Árvore Antiga", categorias: ["rpg", "3d"], preco: "R$ 120,00", novo: true,
     resumo: "Tronco retorcido com saída de dados entre as raízes.",
     descricao: "Torre de dados inspirada em florestas encantadas: os dados entram pelos galhos e rolam para fora entre as raízes. Perfeita para mesas de druidas e patrulheiros.",
-    fotos: fotos("torre-arvore", 4), video: "videos/torre-arvore.mp4"
+    fotos: fotos("torre-arvore", 4), sumup: "torre-de-dados-arvore-antiga", video: "videos/torre-arvore.mp4"
   },
   {
-    id: "torre-caveira", nome: "Torre Caveira", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-caveira", nome: "Torre de Dados Caveira Crânio", categorias: ["rpg", "3d"], preco: "R$ 150,00", novo: true,
     resumo: "Os dados saem pela boca de uma caveira.",
     descricao: "Torre de dados em formato de crânio, ideal para campanhas de terror e mestres necromantes. Cores a combinar.",
-    fotos: fotos("torre-caveira", 3), video: "videos/torre-caveira.mp4"
+    fotos: fotos("torre-caveira", 3), sumup: "torre-de-dados-caveira-cranio", video: "videos/torre-caveira.mp4"
   },
   {
-    id: "torre-calice", nome: "Torre Cálice", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-calice", nome: "Torre de Dados Cálice do Paladino", categorias: ["rpg", "3d"], preco: "R$ 60,00", novo: true,
     resumo: "Um cálice dourado que serve de torre e bandeja.",
     descricao: "Torre de dados em formato de taça, com acabamento dourado. Elegante na mesa e ótima de presente para mestres.",
-    fotos: fotos("torre-calice", 5), video: "videos/torre-calice.mp4"
+    fotos: fotos("torre-calice", 5), sumup: "torre-de-dados-calice-do-paladino", video: "videos/torre-calice.mp4"
   },
   {
     id: "torre-espiral", nome: "Torre Escadaria Espiral", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
@@ -116,16 +116,16 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("torre-sombria", 4), video: "videos/torre-sombria.mp4"
   },
   {
-    id: "torre-observador", nome: "Torre Olho Monstruoso", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-observador", nome: "Torre de Dados Beholder sobre Pedra", categorias: ["rpg", "3d"], preco: "R$ 200,00", novo: true,
     resumo: "Uma criatura de muitos olhos vigia a bandeja de dados.",
     descricao: "Torre de dados com uma criatura de vários olhos no topo e bandeja redonda. Peça de destaque para colecionadores.",
-    fotos: fotos("torre-observador", 5), video: "videos/torre-observador.mp4"
+    fotos: fotos("torre-observador", 5), sumup: "torre-de-dados-beholder-sobre-pedra", video: "videos/torre-observador.mp4"
   },
   {
-    id: "torre-monge", nome: "Torre Monge", categorias: ["rpg", "3d"], preco: "Sob encomenda", novo: true,
+    id: "torre-monge", nome: "Torre de Dados Mestre dos Magos", categorias: ["rpg", "3d"], preco: "R$ 250,00", novo: true,
     resumo: "Um sábio encapuzado que guarda e rola seus dados.",
     descricao: "Torre de dados em formato de figura encapuzada, em branco. Cores sob encomenda.",
-    fotos: fotos("torre-monge", 3), video: "videos/torre-monge.mp4"
+    fotos: fotos("torre-monge", 3), sumup: "torre-de-dados-mestre-dos-magos", video: "videos/torre-monge.mp4"
   },
   {
     id: "dragao-articulado", nome: "Dragão articulado", categorias: ["3d", "nerd"], preco: "Sob encomenda", destaque: true, novo: true,
@@ -148,10 +148,10 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("deckbox-pokebola", 3)
   },
   {
-    id: "deckbox-grande", nome: "Deck box grande", categorias: ["tcg", "3d"], preco: "Sob encomenda", destaque: true, novo: true,
+    id: "deckbox-grande", nome: "Porta Deck MTG Commander com Logo", categorias: ["tcg", "3d"], preco: "R$ 60,00", destaque: true, novo: true,
     resumo: "Caixa maior para decks grandes, com símbolo em relevo.",
     descricao: "Deck box de tamanho maior, ideal para decks grandes com sleeves. Tampa de encaixe e símbolo em relevo. Cores a combinar.",
-    fotos: fotos("deckbox-grande", 4)
+    fotos: fotos("deckbox-grande", 4), sumup: "porta-deck-mtg-commander-com-logo"
   },
   {
     id: "deckbox-bandeja", nome: "Caixa D&D com bandeja de dados", categorias: ["tcg", "rpg", "3d"], preco: "Sob encomenda", novo: true,
