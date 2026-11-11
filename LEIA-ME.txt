@@ -24,4 +24,4 @@ ESPAÇOS RESERVADOS (aguardando material)
   - Board games: organizadores, porta-cartas
   - Eventos: próximo evento (data, nome, local)
   - Nomes dos amigurumis sem legenda na galeria
-  - Texto "Quem faz" (seção Sobre) é provisório: revisar
+  - Texto "Quem faz" (seção Sobre) aprovado e complementado em 11/11/2026
