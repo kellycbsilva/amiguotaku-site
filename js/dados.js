@@ -122,16 +122,16 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("torre-sombria", 4), sumup: "torre-sombria", video: "videos/torre-sombria.mp4"
   },
   {
-    id: "torre-observador", nome: "Torre de Dados Beholder sobre Pedra", categorias: ["rpg", "3d"], preco: "R$ 200,00", novo: true,
+    id: "torre-observador", nome: "Torre Beholder", categorias: ["rpg", "3d"], preco: "R$ 200,00", novo: true,
     resumo: "Uma criatura de muitos olhos vigia a bandeja de dados.",
     descricao: "Torre de dados com uma criatura de vários olhos no topo e bandeja redonda. Peça de destaque para colecionadores.",
-    fotos: fotos("torre-observador", 5), sumup: "torre-de-dados-beholder-sobre-pedra", video: "videos/torre-observador.mp4"
+    fotos: fotos("torre-observador", 5), sumup: "torre-beholder", video: "videos/torre-observador.mp4"
   },
   {
-    id: "torre-monge", nome: "Torre de Dados Mestre dos Magos", categorias: ["rpg", "3d"], preco: "R$ 250,00", novo: true,
+    id: "torre-monge", nome: "Torre Mestre dos Magos", categorias: ["rpg", "3d"], preco: "R$ 250,00", novo: true,
     resumo: "Um sábio encapuzado que guarda e rola seus dados.",
     descricao: "Torre de dados em formato de figura encapuzada, em branco. Cores sob encomenda.",
-    fotos: fotos("torre-monge", 3), sumup: "torre-de-dados-mestre-dos-magos", video: "videos/torre-monge.mp4"
+    fotos: fotos("torre-monge", 3), sumup: "torre-mestre-dos-magos", video: "videos/torre-monge.mp4"
   },
   {
     id: "dragao-articulado", nome: "Dragão Três Cabeças", categorias: ["3d", "nerd"], preco: "R$ 80,00", destaque: true, novo: true,
