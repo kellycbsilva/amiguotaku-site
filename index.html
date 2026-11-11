@@ -179,9 +179,18 @@
         <a class="btn" href="https://instagram.com/amiguotakuoficial" target="_blank" rel="noopener">Agenda completa no Instagram</a>
       </div>
       <ul class="evento-lista">
-        <li><span class="data">6ª<small>edição</small></span><div><h3 style="margin:0">Feira de Artes Visuais · Bazar & Fashion</h3><p>Espaço Cultural Bunkyo · Mesa 2</p></div></li>
-        <li><span class="data">??<small>em breve</small></span><div><h3 style="margin:0">Próximo evento</h3><p>Espaço reservado: adicione data, nome e local.</p></div></li>
+        <li data-fim="2026-11-15"><span class="data">14–15<small>nov</small></span><div><h3 style="margin:0"><a href="https://www.instagram.com/virada_nerd/" target="_blank" rel="noopener">Virada Nerd</a></h3><p>Centro Cultural São Paulo · Sáb 11h–21h, Dom 11h–19h · Entrada gratuita</p></div></li>
+        <li data-fim="2026-11-29"><span class="data">28–29<small>nov</small></span><div><h3 style="margin:0"><a href="https://www.instagram.com/tokiplaymatsuri/" target="_blank" rel="noopener">Toki Play Matsuri</a></h3><p>Liberdade, São Paulo · Sáb e Dom 10h–18h · Mesa com a <a href="https://www.instagram.com/sweetsenkai/" target="_blank" rel="noopener">@sweetsenkai</a></p></div></li>
+        <li data-fim="2026-12-13"><span class="data">12–13<small>dez</small></span><div><h3 style="margin:0"><a href="https://www.ligafest.com.br/" target="_blank" rel="noopener">LigaFest</a></h3><p>Centro de Convenções Frei Caneca · 10h–20h</p></div></li>
       </ul>
+      <script>
+        (function () {
+          var hoje = new Date(); hoje.setHours(0, 0, 0, 0);
+          document.querySelectorAll('.evento-lista li[data-fim]').forEach(function (li) {
+            if (new Date(li.dataset.fim + 'T23:59:59') < hoje) li.remove();
+          });
+        })();
+      </script>
     </div>
   </section>
 
