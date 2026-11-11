@@ -188,7 +188,7 @@ document.querySelectorAll(".produto-pagina .miniaturas button").forEach(function
 }
 
 # ---------- sitemap.xml ----------
-$urls = @("", "catalogo.html", "amigurumis.html", "encomendas.html", "links/") + $paginas
+$urls = @("", "catalogo.html", "amigurumis.html", "encomendas.html", "trocas-e-devolucoes.html", "links/") + $paginas
 $sm = '<?xml version="1.0" encoding="UTF-8"?>' + "`n" + '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "`n"
 foreach ($u in $urls) { $sm += "  <url><loc>$SITE$u</loc><lastmod>$HOJE</lastmod></url>`n" }
 $sm += "</urlset>`n"
