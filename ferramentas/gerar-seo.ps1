@@ -15,6 +15,16 @@ $utf8 = New-Object System.Text.UTF8Encoding($false)
 # Produtos enviados ao Google Merchant Center (ids de js/dados.js).
 # Não inclua peças de personagem licenciado.
 $MERCHANT = @("torre-observador", "torre-monge", "deckbox-energias", "dragao-articulado")
+# Títulos e descrições só do feed, sem marcas de terceiros (o site continua com os nomes normais)
+$TITULO_FEED = @{
+  "torre-observador" = "Torre de Dados 3D Monstro de Olhos | Amiguotaku"
+  "torre-monge" = "Torre de Dados 3D Sábio Encapuzado | Amiguotaku"
+  "deckbox-energias" = "Deck Box 3D para Cartas TCG | Amiguotaku"
+  "dragao-articulado" = "Dragão de Três Cabeças em Impressão 3D | Amiguotaku"
+}
+$DESC_FEED = @{
+  "deckbox-energias" = "Caixa para deck de cartas TCG impressa em 3D, com tampa de encaixe e símbolos em relevo em amarelo ou laranja. Comporta um deck com sleeves."
+}
 
 function Esc($s) { [System.Net.WebUtility]::HtmlEncode([string]$s) }
 function Grava($rel, $txt) { [IO.File]::WriteAllText((Join-Path $raiz $rel), $txt, $utf8) }
@@ -195,15 +205,15 @@ foreach ($id in $MERCHANT) {
   $it += @"
     <item>
       <g:id>$($p.id)</g:id>
-      <g:title>$(Esc "$($p.nome) - $(Sufixo $p)")</g:title>
-      <g:description>$(Esc $p.descricao)</g:description>
+      <g:title>$(Esc $(if ($TITULO_FEED[$p.id]) { $TITULO_FEED[$p.id] } else { "$($p.nome) | Amiguotaku" }))</g:title>
+      <g:description>$(Esc $(if ($DESC_FEED[$p.id]) { $DESC_FEED[$p.id] } else { $p.descricao }))</g:description>
       <g:link>${SITE}produto-$($p.sumup).html</g:link>
       <g:image_link>$SITE$($p.fotos[0])</g:image_link>
 $extra
       <g:price>$(Valor $p.preco) BRL</g:price>
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
-      <g:brand>Amigu Otaku</g:brand>
+      <g:brand>Amiguotaku</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>$tipo</g:product_type>
     </item>

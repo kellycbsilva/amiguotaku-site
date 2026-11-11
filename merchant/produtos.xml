@@ -6,7 +6,7 @@
     <description>Acessórios de RPG e TCG impressos em 3D</description>
     <item>
       <g:id>torre-observador</g:id>
-      <g:title>Torre Beholder - impress&#227;o 3D para RPG de mesa</g:title>
+      <g:title>Torre de Dados 3D Monstro de Olhos | Amiguotaku</g:title>
       <g:description>Torre de dados com uma criatura de v&#225;rios olhos no topo e bandeja redonda. Pe&#231;a de destaque para colecionadores.</g:description>
       <g:link>https://amiguotaku.com.br/produto-torre-beholder.html</g:link>
       <g:image_link>https://amiguotaku.com.br/img/produtos/torre-observador/01.jpg</g:image_link>
@@ -17,13 +17,13 @@
       <g:price>200.00 BRL</g:price>
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
-      <g:brand>Amigu Otaku</g:brand>
+      <g:brand>Amiguotaku</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Acessórios de RPG &gt; Torre de dados</g:product_type>
     </item>
     <item>
       <g:id>torre-monge</g:id>
-      <g:title>Torre Mestre dos Magos - impress&#227;o 3D para RPG de mesa</g:title>
+      <g:title>Torre de Dados 3D S&#225;bio Encapuzado | Amiguotaku</g:title>
       <g:description>Torre de dados em formato de figura encapuzada, em branco. Cores sob encomenda.</g:description>
       <g:link>https://amiguotaku.com.br/produto-torre-mestre-dos-magos.html</g:link>
       <g:image_link>https://amiguotaku.com.br/img/produtos/torre-monge/01.jpg</g:image_link>
@@ -32,14 +32,14 @@
       <g:price>250.00 BRL</g:price>
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
-      <g:brand>Amigu Otaku</g:brand>
+      <g:brand>Amiguotaku</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Acessórios de RPG &gt; Torre de dados</g:product_type>
     </item>
     <item>
       <g:id>deckbox-energias</g:id>
-      <g:title>Deck Box Energias - impress&#227;o 3D para TCG e card games</g:title>
-      <g:description>Caixa para deck impressa em 3D, com tampa de encaixe e s&#237;mbolos de energia em amarelo ou laranja. Comporta um deck com sleeves.</g:description>
+      <g:title>Deck Box 3D para Cartas TCG | Amiguotaku</g:title>
+      <g:description>Caixa para deck de cartas TCG impressa em 3D, com tampa de encaixe e s&#237;mbolos em relevo em amarelo ou laranja. Comporta um deck com sleeves.</g:description>
       <g:link>https://amiguotaku.com.br/produto-deck-box-energias.html</g:link>
       <g:image_link>https://amiguotaku.com.br/img/produtos/deckbox-energias/01.jpg</g:image_link>
       <g:additional_image_link>https://amiguotaku.com.br/img/produtos/deckbox-energias/02.jpg</g:additional_image_link>
@@ -49,13 +49,13 @@
       <g:price>60.00 BRL</g:price>
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
-      <g:brand>Amigu Otaku</g:brand>
+      <g:brand>Amiguotaku</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Acessórios de TCG &gt; Deck box</g:product_type>
     </item>
     <item>
       <g:id>dragao-articulado</g:id>
-      <g:title>Drag&#227;o Tr&#234;s Cabe&#231;as - impress&#227;o 3D para decora&#231;&#227;o nerd</g:title>
+      <g:title>Drag&#227;o de Tr&#234;s Cabe&#231;as em Impress&#227;o 3D | Amiguotaku</g:title>
       <g:description>Drag&#227;o articulado impresso em 3D, com movimento no corpo e nas asas. Em azul e verde met&#225;licos e outras cores. &#211;timo para decorar a mesa ou presentear.</g:description>
       <g:link>https://amiguotaku.com.br/produto-dragao-tres-cabecas.html</g:link>
       <g:image_link>https://amiguotaku.com.br/img/produtos/dragao-articulado/01.jpg</g:image_link>
@@ -66,7 +66,7 @@
       <g:price>80.00 BRL</g:price>
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
-      <g:brand>Amigu Otaku</g:brand>
+      <g:brand>Amiguotaku</g:brand>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Produtos nerd &gt; Impressão 3D</g:product_type>
     </item>
