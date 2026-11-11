@@ -25,3 +25,11 @@ ESPAÇOS RESERVADOS (aguardando material)
   - Eventos: próximo evento (data, nome, local)
   - Nomes dos amigurumis sem legenda na galeria
   - Texto "Quem faz" (seção Sobre) aprovado e complementado em 11/11/2026
+
+SEO E GOOGLE (11/11/2026)
+  produto-*.html     Uma página por produto com preço (gerada; não edite à mão)
+  sitemap.xml        Lista de páginas para o Google
+  robots.txt         Regras para buscadores
+  merchant/produtos.xml  Feed do Google Merchant Center (só os produtos da lista $MERCHANT)
+  Depois de mudar produtos ou preços em js/dados.js, rode ferramentas\gerar-seo.ps1
+  (botão direito > Executar com o PowerShell) para atualizar as páginas, o sitemap e o feed.

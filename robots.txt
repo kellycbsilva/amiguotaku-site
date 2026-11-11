@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /previas/
+Disallow: /ferramentas/
+Disallow: /ver-site-local.ps1
+
+Sitemap: https://amiguotaku.com.br/sitemap.xml

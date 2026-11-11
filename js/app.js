@@ -141,7 +141,7 @@
       if (mini.hasAttribute("data-video")) {
         principal.innerHTML = '<video src="' + mini.getAttribute("data-video") + '" controls autoplay muted playsinline style="width:100%;height:100%;object-fit:contain;background:#000"></video>';
       } else {
-        principal.innerHTML = '<img src="' + mini.getAttribute("data-src") + '" alt="">';
+        principal.innerHTML = '<img src="' + mini.getAttribute("data-src") + '" alt="' + esc(modal.querySelector(".modal-info h2").textContent) + '">';
       }
       modal.querySelectorAll(".miniaturas button").forEach(function (b) { b.removeAttribute("aria-current"); });
       mini.setAttribute("aria-current", "true");
@@ -164,6 +164,7 @@
       '<div class="preco">' + esc(p.preco) + '</div><p class="desc">' + esc(p.descricao) + "</p>" +
       '<div class="botoes"><a class="btn btn-whats" target="_blank" rel="noopener" href="' + whatsLink(msg) + '">' + ICON_WHATS + "Quero esse!</a>" +
       (p.sumup ? '<a class="btn btn-amarelo" target="_blank" rel="noopener" href="' + esc(C.lojaUrl + "product/" + p.sumup) + '">Comprar agora</a>' : "") + '</div>' +
+      (p.preco.indexOf("R$") === 0 && p.sumup && !p.placeholder && p.categorias.indexOf("amigurumi") < 0 ? '<p><a href="produto-' + esc(p.sumup) + '.html">Ver página completa do produto</a></p>' : "") +
       '<p class="nota">Peças feitas à mão e em impressão 3D: cores e detalhes podem variar. Personalizamos sob encomenda.</p>' +
       "</div></div>"
     );
