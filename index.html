@@ -3,16 +3,52 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Amigu Otaku · Acessórios de RPG, TCG e Amigurumis</title>
-<meta name="description" content="Acessórios de RPG e TCG impressos em 3D, amigurumis feitos à mão e produtos nerd. Cases de dados, torres, deck boxes e personagens em crochê sob encomenda.">
-<meta property="og:title" content="Amigu Otaku · RPG, TCG e Amigurumis">
-<meta property="og:description" content="Acessórios de RPG e TCG em 3D e amigurumis feitos à mão.">
-<meta property="og:image" content="img/marca/logo.png">
+<title>Amigu Otaku | Torre de dados, deck box, impressão 3D e amigurumi personalizado em SP</title>
+<meta name="description" content="Acessórios de RPG e board game impressos em 3D, deck box para TCG e amigurumi personalizado feito à mão em São Paulo. Torres de dados, cases e peças nerd sob encomenda.">
+<link rel="canonical" href="https://amiguotaku.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Amigu Otaku">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://amiguotaku.com.br/">
+<meta property="og:title" content="Amigu Otaku | Torre de dados, deck box, impressão 3D e amigurumi personalizado em SP">
+<meta property="og:description" content="Acessórios de RPG e board game impressos em 3D, deck box para TCG e amigurumi personalizado feito à mão em São Paulo. Torres de dados, cases e peças nerd sob encomenda.">
+<meta property="og:image" content="https://amiguotaku.com.br/img/marca/logo.png">
+<meta name="twitter:card" content="summary">
 <link rel="icon" href="img/marca/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "Store"],
+      "@id": "https://amiguotaku.com.br/#loja",
+      "name": "Amigu Otaku",
+      "url": "https://amiguotaku.com.br/",
+      "logo": "https://amiguotaku.com.br/img/marca/logo.png",
+      "image": "https://amiguotaku.com.br/img/marca/logo.png",
+      "description": "Acessórios de RPG, TCG e board game impressos em 3D, amigurumis personalizados feitos à mão e produtos nerd. Atendimento na Grande São Paulo e ABC, envio para todo o Brasil.",
+      "telephone": "+55-11-99335-6119",
+      "email": "amiguotaku@gmail.com",
+      "priceRange": "R$ 30 - R$ 250",
+      "currenciesAccepted": "BRL",
+      "areaServed": [
+        {"@type": "City", "name": "São Paulo"},
+        {"@type": "AdministrativeArea", "name": "Região Metropolitana de São Paulo"},
+        {"@type": "AdministrativeArea", "name": "ABC Paulista"},
+        {"@type": "Country", "name": "Brasil"}
+      ],
+      "knowsAbout": ["amigurumi personalizado", "torre de dados", "deck box", "impressão 3D", "RPG de mesa", "board game", "TCG"],
+      "sameAs": ["https://instagram.com/amiguotakuoficial", "https://facebook.com/amiguotaku"],
+      "contactPoint": {"@type": "ContactPoint", "telephone": "+55-11-99335-6119", "contactType": "customer service", "availableLanguage": "Portuguese"}
+    },
+    {"@type": "WebSite", "@id": "https://amiguotaku.com.br/#site", "name": "Amigu Otaku", "url": "https://amiguotaku.com.br/", "inLanguage": "pt-BR", "publisher": {"@id": "https://amiguotaku.com.br/#loja"}}
+  ]
+}
+</script>
 </head>
 <body data-pagina="inicio">
 <header id="topo"></header>
@@ -178,17 +214,32 @@
         <p class="lead">Feiras geek, de artes e de anime: venha ver as peças de perto, rolar uns dados na torre e conhecer o Amigu.</p>
         <a class="btn" href="https://instagram.com/amiguotakuoficial" target="_blank" rel="noopener">Agenda completa no Instagram</a>
       </div>
-      <ul class="evento-lista">
-        <li data-fim="2026-11-15"><span class="data">14–15<small>nov</small></span><div><h3 style="margin:0"><a href="https://www.instagram.com/virada_nerd/" target="_blank" rel="noopener">Virada Nerd</a></h3><p>Centro Cultural São Paulo · Sáb 11h–21h, Dom 11h–19h · Entrada gratuita</p></div></li>
-        <li data-fim="2026-11-29"><span class="data">28–29<small>nov</small></span><div><h3 style="margin:0"><a href="https://www.instagram.com/tokiplaymatsuri/" target="_blank" rel="noopener">Toki Play Matsuri</a></h3><p>Liberdade, São Paulo · Sáb e Dom 10h–18h · Mesa com a <a href="https://www.instagram.com/sweetsenkai/" target="_blank" rel="noopener">@sweetsenkai</a></p></div></li>
-        <li data-fim="2026-12-13"><span class="data">12–13<small>dez</small></span><div><h3 style="margin:0"><a href="https://www.ligafest.com.br/" target="_blank" rel="noopener">LigaFest</a></h3><p>Centro de Convenções Frei Caneca · 10h–20h</p></div></li>
-      </ul>
+      <ul class="evento-lista" id="agenda-lista"></ul>
+      <script src="js/eventos.js"></script>
       <script>
+        /* A lista vem de js/eventos.js, a mesma da página de links. */
         (function () {
+          var meses = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
           var hoje = new Date(); hoje.setHours(0, 0, 0, 0);
-          document.querySelectorAll('.evento-lista li[data-fim]').forEach(function (li) {
-            if (new Date(li.dataset.fim + 'T23:59:59') < hoje) li.remove();
-          });
+          function dt(s) { var p = String(s).split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+          function esc(t) { return String(t || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+          function link(url, txt) { return url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(txt) + '</a>' : esc(txt); }
+          var lista = (window.EVENTOS || []).filter(function (e) { return e.data && dt(e.dataFim || e.data) >= hoje; })
+            .sort(function (a, b) { return dt(a.data) - dt(b.data); });
+          var alvo = document.getElementById("agenda-lista");
+          if (!lista.length) {
+            alvo.innerHTML = '<li><span class="data">em<small>breve</small></span><div><h3 style="margin:0">Próximos eventos em breve</h3><p>Acompanhe no ' + link("https://instagram.com/amiguotakuoficial", "@amiguotakuoficial") + '.</p></div></li>';
+            return;
+          }
+          alvo.innerHTML = lista.map(function (e) {
+            var d = dt(e.data), f = e.dataFim ? dt(e.dataFim) : null;
+            var dia = d.getDate() + (f && f.getTime() !== d.getTime() ? "–" + f.getDate() : "");
+            var extras = [esc(e.local)];
+            if (e.mesa && !/^Procure/i.test(e.mesa)) extras.push(esc(e.mesa));
+            if (e.obs) extras.push(link(e.obsLink, e.obs));
+            return '<li><span class="data">' + dia + '<small>' + meses[d.getMonth()] + '</small></span><div><h3 style="margin:0">' +
+              link(e.link, e.nome) + '</h3><p>' + extras.join(" · ") + '</p></div></li>';
+          }).join("");
         })();
       </script>
     </div>
