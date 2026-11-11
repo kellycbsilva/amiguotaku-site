@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amiguotaku | Links</title>
+<meta name="description" content="Links da Amigu Otaku: novidades, amigurumis, produtos 3D, board game e TCG, loja online, WhatsApp e agenda de eventos.">
+<meta property="og:title" content="Amiguotaku | Links">
+<meta property="og:description" content="Amigurumis, acessórios 3D de RPG, board game e TCG. Loja online, WhatsApp e eventos.">
+<meta property="og:image" content="https://amiguotaku.com.br/img/marca/logo.png">
+<meta name="theme-color" content="#F2AEC8">
+<link rel="canonical" href="https://amiguotaku.com.br/links/">
+<link rel="icon" href="../img/marca/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rosa: #F2AEC8; --rosa-claro: #FBE3EC;
+    --lavanda: #8799CE; --lavanda-claro: #DDE3F5;
+    --amarelo: #F0E63A; --magenta: #9B1B5E;
+    --tinta: #1B1530; --tinta-suave: #4A4560;
+    --branco: #FFFFFF; --superficie: #FFF6FA; --noite: #221B3D;
+    --borda: 3px solid var(--tinta);
+    --sombra-p: 4px 4px 0 var(--tinta);
+    --f-titulo: "Fredoka", "Baloo 2", "Arial Rounded MT Bold", system-ui, sans-serif;
+    --f-texto: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    font-family: var(--f-texto); color: var(--tinta);
+    background: var(--lavanda-claro);
+    background-image:
+      radial-gradient(circle at 12% 8%, var(--rosa) 0 90px, transparent 91px),
+      radial-gradient(circle at 92% 30%, var(--amarelo) 0 46px, transparent 47px),
+      radial-gradient(circle at 6% 78%, var(--lavanda) 0 60px, transparent 61px),
+      radial-gradient(circle at 96% 94%, var(--rosa) 0 80px, transparent 81px);
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { width: min(480px, 100% - 32px); margin: 0 auto; padding: 28px 0 36px; }
+  .perfil { text-align: center; margin-bottom: 22px; }
+  .avatar {
+    width: 116px; height: 116px; margin: 0 auto 12px; border-radius: 50%;
+    background: var(--amarelo); border: var(--borda); box-shadow: var(--sombra-p);
+    display: grid; place-items: center; overflow: hidden;
+  }
+  .avatar img { width: 92%; height: auto; display: block; }
+  .logo { width: 210px; max-width: 70%; height: auto; display: block; margin: 0 auto 6px; }
+  h1 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .bio { margin: 0; font-size: 1rem; color: var(--tinta-suave); line-height: 1.45; }
+  .bio strong { color: var(--magenta); }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .link {
+    display: flex; align-items: center; gap: 14px;
+    min-height: 64px; padding: 10px 18px 10px 12px;
+    border: var(--borda); border-radius: 18px; box-shadow: var(--sombra-p);
+    background: var(--superficie); color: var(--tinta); text-decoration: none;
+    font-family: var(--f-titulo); font-weight: 600; font-size: 1.12rem; line-height: 1.2;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .link:hover, .link:focus-visible { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--tinta); }
+  .link:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--tinta); }
+  .link:focus-visible { outline: 3px solid var(--magenta); outline-offset: 3px; }
+  .ico {
+    flex: none; width: 44px; height: 44px; border-radius: 12px;
+    border: 2px solid var(--tinta); background: var(--branco);
+    display: grid; place-items: center; font-size: 1.4rem;
+  }
+  .ico svg { width: 24px; height: 24px; }
+  .txt { flex: 1; }
+  .txt small { display: block; font-family: var(--f-texto); font-weight: 700; font-size: .82rem; color: var(--tinta-suave); margin-top: 2px; }
+  .seta { flex: none; font-size: 1.3rem; opacity: .7; }
+  .l-novidades { background: var(--amarelo); }
+  .l-amigurumi { background: var(--rosa); }
+  .l-3d { background: var(--lavanda); }
+  .l-tcg { background: var(--noite); color: var(--branco); }
+  .l-tcg small { color: var(--lavanda-claro); }
+  .l-loja { background: var(--magenta); color: var(--branco); }
+  .l-loja small { color: var(--rosa-claro); }
+  .l-whats { background: #25D366; }
+  .l-whats small { color: var(--tinta); }
+  .l-agenda { background: var(--rosa-claro); }
+  .rodape { margin-top: 26px; text-align: center; font-size: .85rem; color: var(--tinta-suave); }
+  .rodape a { color: var(--magenta); font-weight: 800; }
+  @media (prefers-reduced-motion: reduce) { .link { transition: none; } }
+  /* ---- logo/mascote animado ---- */
+  .avatar { width: 230px; max-width: 72%; height: auto; margin: 0 auto 8px; background: none; border: 0; box-shadow: none; border-radius: 0;
+    display: block; animation: pulo 3.2s ease-in-out infinite; position: relative; overflow: visible; }
+  .avatar .logo { width: 100%; max-width: none; margin: 0; filter: drop-shadow(4px 4px 0 var(--tinta)); }
+  .eventos { position: relative; }
+  .acena { position: absolute; top: -46px; right: -6px; width: 92px; height: auto; transform-origin: 50% 100%; animation: aceno 2.6s ease-in-out infinite; pointer-events: none; }
+  @keyframes aceno { 0%,100% { transform: rotate(-6deg); } 50% { transform: rotate(6deg) translateY(-3px); } }
+  .avatar::after { content: "✦"; position: absolute; top: -8px; right: -12px; font-size: 1.6rem; color: var(--magenta); animation: brilho 2.4s ease-in-out infinite; }
+  .avatar::before { content: "✦"; position: absolute; bottom: 4px; left: -16px; font-size: 1.1rem; color: var(--lavanda); animation: brilho 2.4s ease-in-out 1.2s infinite; }
+  @keyframes pulo { 0%,100% { transform: translateY(0) rotate(-3deg); } 50% { transform: translateY(-8px) rotate(3deg); } }
+  @keyframes brilho { 0%,100% { opacity: .2; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.15); } }
+  .link .ico { transition: transform .2s; }
+  .link:hover .ico { transform: rotate(-8deg) scale(1.08); }
+  /* ---- próximos eventos ---- */
+  .eventos { margin: 0 0 22px; padding: 16px 14px 14px; border: var(--borda); border-radius: 22px; background: var(--noite); color: var(--branco); box-shadow: var(--sombra-p); }
+  .eventos h2 { margin: 0 0 12px; font-family: var(--f-titulo); font-size: 1.3rem; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .eventos h2 span { background: var(--amarelo); color: var(--tinta); border: 2px solid var(--tinta); border-radius: 999px; padding: 2px 10px; font-size: .75rem; letter-spacing: .05em; text-transform: uppercase; }
+  .ev-lista { display: grid; gap: 10px; }
+  .ev { display: flex; gap: 12px; align-items: center; background: var(--superficie); color: var(--tinta); border: 2px solid var(--tinta); border-radius: 16px; padding: 10px 12px; text-decoration: none; }
+  .ev-data { flex: none; width: 60px; text-align: center; background: var(--rosa); border: 2px solid var(--tinta); border-radius: 12px; padding: 5px 0; font-family: var(--f-titulo); line-height: 1; }
+  .ev-data b { display: block; font-size: 1.35rem; }
+  .ev-data i { display: block; font-style: normal; font-size: .75rem; text-transform: uppercase; margin-top: 3px; }
+  .ev:nth-child(2) .ev-data { background: var(--amarelo); }
+  .ev:nth-child(3) .ev-data { background: var(--lavanda); }
+  .ev h3 { margin: 0 0 2px; font-family: var(--f-titulo); font-size: 1.02rem; line-height: 1.2; }
+  .ev p { margin: 0; font-size: .85rem; color: var(--tinta-suave); line-height: 1.35; }
+  .ev .stand { display: inline-block; margin-top: 4px; background: var(--magenta); color: var(--branco); border-radius: 999px; padding: 1px 9px; font-weight: 800; font-size: .75rem; }
+  .ev-vazio { margin: 0; text-align: center; padding: 14px 10px; background: var(--superficie); color: var(--tinta); border: 2px dashed var(--tinta); border-radius: 16px; font-size: .92rem; }
+  .ev-vazio a { color: var(--magenta); font-weight: 800; }
+  @media (prefers-reduced-motion: reduce) { .avatar, .avatar::after, .avatar::before, .acena { animation: none; } }
+</style>
+</head>
+<body>
+<main>
+  <header class="perfil">
+    <div class="avatar"><img class="logo" src="../img/marca/logo.png" alt="Amigu Otaku"></div>
+    <h1>Amiguotaku | Links</h1>
+    <p class="bio">Amigurumis feitos à mão, acessórios 3D de <strong>RPG</strong>, <strong>board game</strong> e <strong>TCG</strong>.</p>
+  </header>
+
+  <section class="eventos" aria-labelledby="ev-titulo">
+    <img class="acena" src="../img/mascote/pose-05.png" alt="" aria-hidden="true">
+    <h2 id="ev-titulo">📍 Próximos eventos <span>Venha ver de perto</span></h2>
+    <div class="ev-lista" id="ev-lista"></div>
+  </section>
+
+  <ul>
+    <li><a class="link l-novidades" href="../catalogo.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links_bio">
+      <span class="ico" aria-hidden="true">✨</span><span class="txt">Novidades<small>Tudo o que chegou na vitrine</small></span><span class="seta" aria-hidden="true">›</span></a></li>
+    <li><a class="link l-amigurumi" href="../amigurumis.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links_bio">
+      <span class="ico" aria-hidden="true">🧶</span><span class="txt">Amigurumis<small>Personagens em crochê, sob encomenda</small></span><span class="seta" aria-hidden="true">›</span></a></li>
+    <li><a class="link l-3d" href="../catalogo.html?cat=3d&amp;utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links_bio">
+      <span class="ico" aria-hidden="true">🐉</span><span class="txt">Produtos 3D<small>Torres, deck boxes, dragão articulado</small></span><span class="seta" aria-hidden="true">›</span></a></li>
+    <li><a class="link l-tcg" href="../catalogo.html?cat=tcg&amp;utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links_bio">
+      <span class="ico" aria-hidden="true">🃏</span><span class="txt">Board game &amp; TCG<small>Deck boxes, organizadores e acessórios</small></span><span class="seta" aria-hidden="true">›</span></a></li>
+    <li><a class="link l-loja" href="https://loja.amiguotaku.com.br" target="_blank" rel="noopener">
+      <span class="ico" aria-hidden="true">🛒</span><span class="txt">Loja online<small>Compre direto pela loja</small></span><span class="seta" aria-hidden="true">›</span></a></li>
+    <li><a class="link l-whats" href="https://wa.me/5511993356119?text=Oi%2C%20Amigu%20Otaku!%20Vim%20pelo%20Instagram%20e%20queria%20saber%20mais%20%F0%9F%98%8A" target="_blank" rel="noopener">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></span><span class="txt">Falar no WhatsApp<small>11 99335-6119</small></span><span class="seta" aria-hidden="true">›</span></a></li>
+    <li><a class="link l-agenda" href="../index.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links_bio#eventos">
+      <span class="ico" aria-hidden="true">📅</span><span class="txt">Agenda de eventos<small>Onde encontrar o nosso stand</small></span><span class="seta" aria-hidden="true">›</span></a></li>
+  </ul>
+
+  <p class="rodape"><a href="../index.html?utm_source=instagram&amp;utm_medium=bio&amp;utm_campaign=links_bio">amiguotaku.com.br</a> · <a href="https://instagram.com/amiguotakuoficial" target="_blank" rel="noopener">@amiguotakuoficial</a></p>
+</main>
+<script>
+/* =========================================================
+   PRÓXIMOS EVENTOS — edite só esta lista (aparecem até 3)
+   data e dataFim no formato AAAA-MM-DD (dataFim e link são opcionais).
+   Eventos que já passaram somem sozinhos. Exemplo:
+   { nome: "Nome do evento", data: "2026-12-05", dataFim: "2026-12-07",
+     local: "Espaço, Cidade", stand: "Mesa 12", link: "https://..." },
+   ========================================================= */
+var EVENTOS = [
+];
+
+(function () {
+  var meses = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+  var hoje = new Date(); hoje.setHours(0, 0, 0, 0);
+  function dt(s) { var p = String(s).split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function esc(t) { return String(t || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  var lista = EVENTOS.filter(function (e) { return e.data && dt(e.dataFim || e.data) >= hoje; })
+    .sort(function (a, b) { return dt(a.data) - dt(b.data); }).slice(0, 3);
+  var alvo = document.getElementById("ev-lista");
+  if (!lista.length) {
+    alvo.innerHTML = '<p class="ev-vazio">Datas dos próximos eventos em breve!<br>Acompanhe no <a href="https://instagram.com/amiguotakuoficial" target="_blank" rel="noopener">@amiguotakuoficial</a>.</p>';
+    return;
+  }
+  alvo.innerHTML = lista.map(function (e) {
+    var d = dt(e.data), f = e.dataFim ? dt(e.dataFim) : null;
+    var dia = d.getDate() + (f && f.getTime() !== d.getTime() ? "–" + f.getDate() : "");
+    var tag = e.link ? "a" : "div";
+    var href = e.link ? ' href="' + esc(e.link) + '" target="_blank" rel="noopener"' : "";
+    return "<" + tag + ' class="ev"' + href + '><span class="ev-data"><b>' + dia + "</b><i>" + meses[d.getMonth()] + "</i></span><div><h3>" +
+      esc(e.nome) + "</h3><p>" + esc(e.local) + "</p>" + (e.stand ? '<span class="stand">' + esc(e.stand) + "</span>" : "") + "</div></" + tag + ">";
+  }).join("");
+})();
+</script>
+</body>
+</html>
