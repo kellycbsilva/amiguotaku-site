@@ -68,7 +68,7 @@
 
       "</ul></div>" +
       "<div><h4>Fale com a gente</h4><ul>" +
-      '<li><a href="' + whatsLink() + '" target="_blank" rel="noopener">WhatsApp ' + esc(C.whatsappTexto) + "</a></li>" +
+      '<li><a href="' + whatsLink() + '" target="_blank" rel="noopener">Falar no WhatsApp</a></li>" +
       '<li><a href="' + esc(C.instagram) + '" target="_blank" rel="noopener">Instagram ' + esc(C.instagramTexto) + "</a></li>" +
       '<li><a href="' + esc(C.facebook) + '" target="_blank" rel="noopener">Facebook</a></li>' +
       "</ul></div>" +

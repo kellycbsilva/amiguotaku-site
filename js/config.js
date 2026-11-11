@@ -6,9 +6,8 @@ window.AMIGU_CONFIG = {
   // O endereço sumupstore.com sempre redireciona para o domínio atual da loja.
   lojaUrl: "https://amiguotaku.sumupstore.com/",
 
-  // WhatsApp só com números: 55 + DDD + número
+  // WhatsApp só com números: 55 + DDD + número (o número nunca aparece escrito no site, só como link)
   whatsapp: "5511993356119",
-  whatsappTexto: "11 99335-6119",
 
   instagram: "https://instagram.com/amiguotakuoficial",
   instagramTexto: "@amiguotakuoficial",
