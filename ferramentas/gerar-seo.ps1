@@ -17,10 +17,10 @@ $utf8 = New-Object System.Text.UTF8Encoding($false)
 $MERCHANT = @("torre-observador", "torre-monge", "deckbox-energias", "dragao-articulado")
 # Títulos e descrições só do feed, sem marcas de terceiros (o site continua com os nomes normais)
 $TITULO_FEED = @{
-  "torre-observador" = "Torre de Dados 3D Monstro de Olhos | Amiguotaku"
-  "torre-monge" = "Torre de Dados 3D Sábio Encapuzado | Amiguotaku"
-  "deckbox-energias" = "Deck Box 3D para Cartas TCG | Amiguotaku"
-  "dragao-articulado" = "Dragão de Três Cabeças em Impressão 3D | Amiguotaku"
+  "torre-observador" = "Torre de Dados para RPG em Impressão 3D - Modelo Criatura de Olhos | Amiguotaku"
+  "torre-monge" = "Torre de Dados para RPG em Impressão 3D - Modelo Sábio Encapuzado | Amiguotaku"
+  "deckbox-energias" = "Deck Box para Cartas TCG em Impressão 3D | Amiguotaku"
+  "dragao-articulado" = "Dragão Articulado de Três Cabeças em Impressão 3D | Amiguotaku"
 }
 $DESC_FEED = @{
   "deckbox-energias" = "Caixa para deck de cartas TCG impressa em 3D, com tampa de encaixe e símbolos em relevo em amarelo ou laranja. Comporta um deck com sleeves."
@@ -206,7 +206,7 @@ foreach ($id in $MERCHANT) {
     <item>
       <g:id>$($p.id)</g:id>
       <g:title>$(Esc $(if ($TITULO_FEED[$p.id]) { $TITULO_FEED[$p.id] } else { "$($p.nome) | Amiguotaku" }))</g:title>
-      <g:description>$(Esc $(if ($DESC_FEED[$p.id]) { $DESC_FEED[$p.id] } else { $p.descricao }))</g:description>
+      <g:description>$(Esc (($(if ($DESC_FEED[$p.id]) { $DESC_FEED[$p.id] } else { $p.descricao })) + " Feito pela Amiguotaku em São Paulo, com envio para todo o Brasil."))</g:description>
       <g:link>${SITE}produto-$($p.sumup).html</g:link>
       <g:image_link>$SITE$($p.fotos[0])</g:image_link>
 $extra
