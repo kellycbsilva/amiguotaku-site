@@ -167,7 +167,7 @@ $ldTxt
 
 <script src="js/config.js"></script>
 <script src="js/dados.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.js?v=20261111"></script>
 <script>
 document.querySelectorAll(".produto-pagina .miniaturas button").forEach(function (b) {
   b.addEventListener("click", function () {
