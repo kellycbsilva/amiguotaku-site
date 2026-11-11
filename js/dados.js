@@ -36,7 +36,7 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("case-para-dados-rpg", 8), sumup: "case-para-dados-rpg"
   },
   {
-    id: "torre-de-dados", nome: "Torre de dados medieval", categorias: ["rpg", "3d"], preco: "R$ 50,00", destaque: true,
+    id: "torre-de-dados", nome: "Torre de dados medieval", categorias: ["rpg", "3d"], preco: "R$ 40,00", destaque: true,
     resumo: "Torre roladora em formato de castelo, com acabamento metálico.",
     descricao: "Rampa interna que garante rolagens justas e cheias de impacto. Impressa em 3D com acabamento metálico e cores personalizáveis sob encomenda (o degradê roxo e dourado faz sucesso!). Tamanho compacto, cabe na mochila.",
     fotos: fotos("torre-de-dados", 9), sumup: "torre-de-dados", video: "videos/torre-de-dados.mp4"
