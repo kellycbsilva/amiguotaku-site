@@ -18,6 +18,7 @@
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>Amiguotaku</g:brand>
+      <g:shipping_weight>0.6 kg</g:shipping_weight>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Acessórios de RPG &gt; Torre de dados</g:product_type>
     </item>
@@ -33,6 +34,7 @@
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>Amiguotaku</g:brand>
+      <g:shipping_weight>0.6 kg</g:shipping_weight>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Acessórios de RPG &gt; Torre de dados</g:product_type>
     </item>
@@ -50,6 +52,7 @@
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>Amiguotaku</g:brand>
+      <g:shipping_weight>0.2 kg</g:shipping_weight>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Acessórios de TCG &gt; Deck box</g:product_type>
     </item>
@@ -67,6 +70,7 @@
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>Amiguotaku</g:brand>
+      <g:shipping_weight>0.3 kg</g:shipping_weight>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>Produtos nerd &gt; Impressão 3D</g:product_type>
     </item>

@@ -22,6 +22,8 @@ $TITULO_FEED = @{
   "deckbox-energias" = "Deck Box para Cartas TCG em Impressão 3D | Amiguotaku"
   "dragao-articulado" = "Dragão Articulado de Três Cabeças em Impressão 3D | Amiguotaku"
 }
+# Peso de envio em kg (estimado; usado na tabela de frete por peso do Merchant)
+$PESO_FEED = @{ "torre-observador" = "0.6"; "torre-monge" = "0.6"; "deckbox-energias" = "0.2"; "dragao-articulado" = "0.3" }
 $DESC_FEED = @{
   "deckbox-energias" = "Caixa para deck de cartas TCG impressa em 3D, com tampa de encaixe e símbolos em relevo em amarelo ou laranja. Comporta um deck com sleeves."
 }
@@ -29,6 +31,9 @@ $DESC_FEED = @{
 function Esc($s) { [System.Net.WebUtility]::HtmlEncode([string]$s) }
 function Grava($rel, $txt) { [IO.File]::WriteAllText((Join-Path $raiz $rel), $txt, $utf8) }
 
+# Usa no app.js a mesma versão (?v=) que a página inicial usa
+$appJs = [regex]::Match([IO.File]::ReadAllText((Join-Path $raiz "index.html"), [Text.Encoding]::UTF8), 'js/app.js[^"]*').Value
+if (-not $appJs) { $appJs = "js/app.js" }
 $js = [IO.File]::ReadAllText((Join-Path $raiz "js\dados.js"), [Text.Encoding]::UTF8)
 $ini = $js.IndexOf("window.AMIGU_PRODUTOS")
 $lista = $js.Substring($ini, $js.IndexOf("window.AMIGU_GALERIA") - $ini)
@@ -214,6 +219,7 @@ $extra
       <g:availability>in_stock</g:availability>
       <g:condition>new</g:condition>
       <g:brand>Amiguotaku</g:brand>
+      <g:shipping_weight>$(if ($PESO_FEED[$p.id]) { $PESO_FEED[$p.id] } else { "0.3" }) kg</g:shipping_weight>
       <g:identifier_exists>no</g:identifier_exists>
       <g:product_type>$tipo</g:product_type>
     </item>
