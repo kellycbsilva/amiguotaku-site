@@ -182,17 +182,36 @@
   });
 
   /* ---------- Galeria amigurumi ---------- */
-  window.amiguGaleria = function (el, limite, ordem) {
-    var G = window.AMIGU_GALERIA, total = window.AMIGU_GALERIA_TOTAL, nums = [];
+  window.amiguGaleria = function (el, limite, ordem, tamanho) {
+    var G = window.AMIGU_GALERIA, T = window.AMIGU_GALERIA_TAMANHO || {}, total = window.AMIGU_GALERIA_TOTAL, nums = [];
     if (ordem) nums = ordem.slice();
     else for (var i = 1; i <= total; i++) nums.push(i);
+    if (tamanho) nums = nums.filter(function (n) { return T[n] === tamanho; });
     if (limite) nums = nums.slice(0, limite);
     el.innerHTML = nums.map(function (n) {
       var src = "img/amigurumi/" + (n < 10 ? "0" : "") + n + ".jpg";
       var nome = G[n] || "Amigu sob encomenda";
-      return '<button type="button" data-src="' + src + '" data-nome="' + esc(nome) + '"><img src="' + src + '" alt="Amigurumi ' + esc(nome) + '" loading="lazy">' +
+      var tam = T[n] ? (T[n] === "GG" ? "Gigante" : T[n]) : "";
+      return '<button type="button" data-src="' + src + '" data-nome="' + esc(nome + (tam ? " · tamanho " + tam : "")) + '"><img src="' + src + '" alt="Amigurumi ' + esc(nome) + '" loading="lazy">' +
+        (tam ? '<b class="tam" aria-label="Tamanho ' + tam + '">' + tam + "</b>" : "") +
         (G[n] ? "<span>" + esc(G[n].split(" · ")[0]) + "</span>" : "") + "</button>";
     }).join("");
+  };
+
+  /* Filtro de tamanho da galeria */
+  window.amiguFiltroTamanho = function (filtroEl, galeriaEl) {
+    var T = window.AMIGU_GALERIA_TAMANHO || {}, usados = {};
+    Object.keys(T).forEach(function (k) { usados[T[k]] = true; });
+    var lista = [{ id: "", nome: "Todos os tamanhos" }].concat((window.AMIGU_TAMANHOS || []).filter(function (t) { return usados[t.id]; }));
+    filtroEl.innerHTML = lista.map(function (t) {
+      return '<button type="button" data-tam="' + t.id + '" aria-pressed="' + (t.id === "") + '">' + esc(t.nome) + "</button>";
+    }).join("");
+    filtroEl.addEventListener("click", function (e) {
+      var b = e.target.closest("button[data-tam]");
+      if (!b) return;
+      filtroEl.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+      window.amiguGaleria(galeriaEl, null, null, b.getAttribute("data-tam") || null);
+    });
   };
 
   /* ---------- Classes ---------- */

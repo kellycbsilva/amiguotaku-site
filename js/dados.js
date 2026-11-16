@@ -261,7 +261,12 @@ window.AMIGU_PRODUTOS = [
 /* Galeria de amigurumis já produzidos (fotos em img/amigurumi/NN.jpg).
    Coloque o nome do personagem onde souber; sem nome aparece "Amigu sob encomenda". */
 window.AMIGU_GALERIA = {
-  1: "Minnie", 3: "Remy · Ratatouille", 9: "Sem-Rosto · A Viagem de Chihiro", 11: "Malévola",
+  1: "Minnie", 2: "Denji · Chainsaw Man", 3: "Remy · Ratatouille", 4: "Raiden Shogun · Genshin Impact",
+  6: "Sephiroth · Final Fantasy", 7: "Albedo · Overlord", 8: "Tsunade · Naruto",
+  9: "Sem-Rosto · A Viagem de Chihiro", 11: "Malévola",
+  13: "Kuwabara · Yu Yu Hakusho", 14: "Kurama · Yu Yu Hakusho", 15: "Van Helsing", 16: "Hiei · Yu Yu Hakusho",
+  17: "Inosuke · Demon Slayer", 18: "Haku · A Viagem de Chihiro", 19: "Hashira · Demon Slayer",
+  20: "Sen · A Viagem de Chihiro",
   32: "Florzinha · Meninas Superpoderosas", 33: "Docinho · Meninas Superpoderosas",
   35: "Macaco Louco · Meninas Superpoderosas", 46: "Tiana", 49: "Gojo · Jujutsu Kaisen",
   50: "Totoro", 51: "Kirby", 52: "Stitch", 54: "Sailor Moon", 56: "Creeper e Enderman · Minecraft",
@@ -269,6 +274,20 @@ window.AMIGU_GALERIA = {
   61: "Coraline", 62: "Koro-sensei · Assassination Classroom"
 };
 window.AMIGU_GALERIA_TOTAL = 63;
+
+/* Tamanho de cada foto da galeria (tabela de preços por tamanho).
+   PP até 10 cm · P 11 a 15 cm · M 16 a 20 cm · G 21 a 30 cm · GG acima de 30 cm */
+window.AMIGU_TAMANHOS = [
+  { id: "PP", nome: "PP · até 10 cm" },
+  { id: "P", nome: "P · 11 a 15 cm" },
+  { id: "M", nome: "M · 16 a 20 cm" },
+  { id: "G", nome: "G · 21 a 30 cm" },
+  { id: "GG", nome: "Gigante · acima de 30 cm" }
+];
+window.AMIGU_GALERIA_TAMANHO = {
+  1: "P", 2: "PP", 3: "M", 4: "G", 5: "G", 6: "G", 7: "G", 8: "M", 9: "P", 10: "G",
+  11: "G", 12: "G", 13: "P", 14: "P", 15: "P", 16: "P", 17: "P", 18: "M", 19: "M", 20: "G", 21: "G"
+};
 
 /* Classes de RPG do mascote (img/classes/<id>.jpg) */
 window.AMIGU_CLASSES = [

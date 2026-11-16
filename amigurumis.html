@@ -49,6 +49,7 @@
         <h2>Galeria de personagens</h2>
         <p class="lead">Gostou de algum? Clique na foto e peça um parecido. Os valores variam conforme tamanho e detalhes.</p>
       </div>
+      <div class="filtros" id="filtro-tamanho" role="group" aria-label="Filtrar por tamanho"></div>
       <div class="galeria" id="galeria"></div>
     </div>
   </section>
@@ -74,10 +75,11 @@
 
 <script src="js/config.js"></script>
 <script src="js/dados.js"></script>
-<script src="js/app.js?v=20261111"></script>
+<script src="js/app.js?v=20261116"></script>
 <script>
   amiguRender(document.getElementById("grade"), AMIGU_PRODUTOS.filter(function (p) { return p.categorias.indexOf("amigurumi") > -1; }));
   amiguGaleria(document.getElementById("galeria"));
+  amiguFiltroTamanho(document.getElementById("filtro-tamanho"), document.getElementById("galeria"));
 </script>
 </body>
 </html>

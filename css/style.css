@@ -278,6 +278,10 @@ p { margin: 0 0 1em; }
   position: absolute; left: 6px; right: 6px; bottom: 6px; font-size: .74rem; font-weight: 800; line-height: 1.2;
   background: rgba(255,255,255,.92); border: 2px solid var(--tinta); border-radius: 10px; padding: 3px 6px; text-align: center;
 }
+.galeria .tam {
+  position: absolute; top: 6px; right: 6px; min-width: 30px; font-size: .74rem; font-weight: 800; line-height: 1;
+  background: var(--amarelo); border: 2px solid var(--tinta); border-radius: 999px; padding: 5px 7px; text-align: center;
+}
 .mais { text-align: center; margin-top: 32px; }
 
 /* ---------- Faixa de fotos de ambiente ---------- */
