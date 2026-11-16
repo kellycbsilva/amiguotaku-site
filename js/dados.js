@@ -271,7 +271,7 @@ window.AMIGU_GALERIA = {
   32: "Florzinha · Meninas Superpoderosas", 33: "Lindinha · Meninas Superpoderosas",
   35: "Macaco Louco · Meninas Superpoderosas", 36: "Lady Gyokyo", 38: "Touka · Tokyo Ghoul",
   39: "Zoro · One Piece", 40: "Príncipe", 41: "Danny Phantom", 43: "Ino · Naruto", 44: "Gambit · X-Men",
-  46: "Princesa Diana", 47: "Elaine", 48: "Kim Possible", 49: "Gojo · Jujutsu Kaisen",
+  46: "Princesa Diana", 47: "Helaine", 48: "Kim Possible", 49: "Gojo · Jujutsu Kaisen",
   50: "Totoro", 51: "Kirby", 52: "Stitch", 54: "Sailor Moon", 55: "Time 7 · Naruto",
   56: "Creeper e Enderman · Minecraft", 57: "Mestre Yoda", 58: "Charizard", 59: "Pikachu, Charmander e Squirtle",
   60: "BB-8", 61: "Coraline", 62: "Koro-sensei · Assassination Classroom", 63: "Frieren"

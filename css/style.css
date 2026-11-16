@@ -282,26 +282,34 @@ p { margin: 0 0 1em; }
   position: absolute; top: 6px; right: 6px; min-width: 30px; font-size: .74rem; font-weight: 800; line-height: 1;
   background: var(--amarelo); border: 2px solid var(--tinta); border-radius: 999px; padding: 5px 7px; text-align: center;
 }
-/* ---------- Preços por tamanho ---------- */
-.tamanhos { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-.tamanhos-sub { font-family: var(--f-titulo); font-size: 1.2rem; margin: 32px 0 14px; }
-.tamanho-bloco {
-  display: flex; flex-direction: column; background: var(--superficie); border: var(--borda);
-  border-radius: var(--raio); box-shadow: var(--sombra); overflow: hidden;
+/* ---------- Amigurumis por tamanho ---------- */
+.filtros .btn-chip {
+  font-family: var(--f-titulo); font-weight: 600; font-size: .95rem; text-decoration: none;
+  padding: 8px 16px; border-radius: 999px; border: var(--borda); background: var(--superficie); color: var(--tinta);
 }
-.tb-foto { position: relative; aspect-ratio: 4/5; background: #9DB0E3; border-bottom: var(--borda); overflow: hidden; }
-.tb-foto .selo { position: absolute; top: 10px; left: 10px; z-index: 1; }
-.tb-foto img { width: 100%; height: 100%; object-fit: cover; }
-.tamanho-bloco.sem-foto .tb-foto { aspect-ratio: 4/3; background: var(--lavanda-claro); display: grid; place-items: center; }
-.tamanho-bloco.sem-foto .tb-foto img { width: 60%; height: auto; object-fit: contain; }
-.tb-info { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
-.tb-info h3 { margin: 0; font-size: 1.1rem; }
-.tb-medida { margin: 0; font-weight: 700; }
-.tb-nota { margin: 0; font-size: .85rem; }
-.tb-preco { font-family: var(--f-titulo); font-weight: 700; font-size: 1.35rem; color: var(--magenta); margin: 4px 0 10px; }
-.tb-preco small { font-size: .8rem; color: var(--tinta); }
-.tb-info .btn { margin-top: auto; justify-content: center; font-size: .9rem; }
-.mais { text-align: center; margin-top: 32px; }
+.filtros .btn-chip:hover { background: var(--amarelo); box-shadow: var(--sombra-p); }
+.tam-secao { margin-top: 48px; scroll-margin-top: 90px; }
+.tam-cab {
+  display: grid; grid-template-columns: minmax(180px, 260px) 1fr; gap: 24px; align-items: center;
+  background: var(--superficie); border: var(--borda); border-radius: var(--raio); box-shadow: var(--sombra); padding: 18px;
+  margin-bottom: 20px;
+}
+.tam-capa.galeria { display: block; }
+.tam-capa.galeria button { width: 100%; display: block; }
+.tam-capa.vazia { position: relative; aspect-ratio: 4/3; background: var(--lavanda-claro); border: var(--borda); border-radius: var(--raio-p); display: grid; place-items: center; }
+.tam-capa.vazia img { width: 55%; height: auto; }
+.tam-capa .selo { position: absolute; top: 10px; left: 10px; z-index: 1; }
+.tb-info { display: flex; flex-direction: column; gap: 4px; }
+.tb-info h3 { margin: 0; font-size: 1.5rem; }
+.tb-medida { margin: 0; font-weight: 700; font-size: 1.05rem; }
+.tb-nota { margin: 0; font-size: .9rem; }
+.tb-preco { font-family: var(--f-titulo); font-weight: 700; font-size: 1.7rem; color: var(--magenta); margin: 6px 0 10px; }
+.tb-preco small { font-size: .85rem; color: var(--tinta); }
+.tb-info .botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (max-width: 600px) {
+  .tam-cab { grid-template-columns: 1fr; }
+  .tam-capa.galeria button { max-width: 260px; margin: 0 auto; }
+}.mais { text-align: center; margin-top: 32px; }
 
 /* ---------- Faixa de fotos de ambiente ---------- */
 .ambiente { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-block: var(--borda); }

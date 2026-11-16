@@ -182,7 +182,7 @@
   });
 
   /* ---------- Galeria amigurumi ---------- */
-  window.amiguGaleria = function (el, limite, ordem, tamanho) {
+  window.amiguGaleria = function (el, limite, ordem, tamanho, semTag) {
     var G = window.AMIGU_GALERIA, T = window.AMIGU_GALERIA_TAMANHO || {}, total = window.AMIGU_GALERIA_TOTAL, nums = [];
     if (ordem) nums = ordem.slice();
     else for (var i = 1; i <= total; i++) nums.push(i);
@@ -194,7 +194,7 @@
       var t = tamanhoInfo(T[n]);
       var rot = t ? curto(t) : "";
       return '<button type="button" data-src="' + src + '" data-nome="' + esc(nome + (t ? " · tamanho " + rot + " (" + t.medida + ") · " + precoTxt(t) : "")) + '"><img src="' + src + '" alt="Amigurumi ' + esc(nome) + '" loading="lazy">' +
-        (t ? '<b class="tam" aria-label="Tamanho ' + esc(rot) + ", " + esc(precoTxt(t)) + '">' + esc(rot) + " · " + esc(t.preco) + "</b>" : "") +
+        (t && !semTag ? '<b class="tam" aria-label="Tamanho ' + esc(rot) + ", " + esc(precoTxt(t)) + '">' + esc(rot) + " · " + esc(t.preco) + "</b>" : "") +
         (G[n] ? "<span>" + esc(G[n].split(" · ")[0]) + "</span>" : "") + "</button>";
     }).join("");
   };
@@ -204,39 +204,45 @@
   function curto(t) { return t.id === "GG" ? "Gigante" : t.tipo === "chaveiro" ? t.nome : t.id; }
   function precoTxt(t) { return (t.aPartir ? "a partir de " : "") + t.preco; }
 
-  /* Filtro de tamanho da galeria */
-  window.amiguFiltroTamanho = function (filtroEl, galeriaEl) {
-    var T = window.AMIGU_GALERIA_TAMANHO || {}, usados = {};
-    Object.keys(T).forEach(function (k) { usados[T[k]] = true; });
-    var lista = [{ id: "", rotulo: "Todos os tamanhos" }].concat((window.AMIGU_TAMANHOS || []).filter(function (t) { return usados[t.id]; }));
-    filtroEl.innerHTML = lista.map(function (t) {
-      var txt = t.rotulo || curto(t) + " · " + t.medida + " · " + precoTxt(t);
-      return '<button type="button" data-tam="' + t.id + '" aria-pressed="' + (t.id === "") + '">' + esc(txt) + "</button>";
+  /* ---------- Amigurumis por tamanho: uma seção por tamanho ----------
+     Capa (foto principal), medida, preço, botões e todas as fotos daquele tamanho. */
+  function fotoGaleria(n) { return "img/amigurumi/" + (n < 10 ? "0" : "") + n + ".jpg"; }
+  window.amiguSecoesTamanho = function (navEl, el) {
+    var T = window.AMIGU_GALERIA_TAMANHO || {}, total = window.AMIGU_GALERIA_TOTAL;
+    var todos = window.AMIGU_TAMANHOS || [];
+    var lista = todos.filter(function (t) { return t.tipo === "amigurumi"; }).concat(todos.filter(function (t) { return t.tipo === "chaveiro"; }));
+    navEl.innerHTML = lista.map(function (t) {
+      return '<a class="btn-chip" href="#tamanho-' + t.id + '">' + esc(t.nome.replace("Amigurumi ", "")) + " · " + esc(precoTxt(t)) + "</a>";
     }).join("");
-    filtroEl.addEventListener("click", function (e) {
-      var b = e.target.closest("button[data-tam]");
-      if (!b) return;
-      filtroEl.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
-      window.amiguGaleria(galeriaEl, null, null, b.getAttribute("data-tam") || null);
-    });
-  };
-
-  /* ---------- Tabela de preços por tamanho ---------- */
-  window.amiguTabelaTamanhos = function (el, tipo) {
-    var lista = (window.AMIGU_TAMANHOS || []).filter(function (t) { return !tipo || t.tipo === tipo; });
     el.innerHTML = lista.map(function (t) {
-      var foto = t.foto ? "img/amigurumi/" + (t.foto < 10 ? "0" : "") + t.foto + ".jpg" : "img/mascote/pose-29.png";
+      var nums = [];
+      for (var i = 1; i <= total; i++) if (T[i] === t.id && i !== t.foto) nums.push(i);
+      var capa = t.foto ? fotoGaleria(t.foto) : "img/mascote/pose-29.png";
+      var qtd = nums.length + (t.foto ? 1 : 0);
       var msg = "Oi, Amigu Otaku! Quero um " + t.nome.replace("Amigurumi", "amigurumi").replace("Chaveiro", "chaveiro") +
         " (" + t.medida + ", " + precoTxt(t) + "). Pode me ajudar?";
-      return '<article class="tamanho-bloco' + (t.foto ? "" : " sem-foto") + '">' +
-        '<div class="tb-foto">' + (t.emBreve ? '<span class="selo rosa">Fotos em breve</span>' : "") +
-        '<img src="' + foto + '" alt="' + (t.foto ? "Exemplo de " + esc(t.nome) : "") + '" loading="lazy"></div>' +
+      var nomeCapa = t.foto ? (window.AMIGU_GALERIA[t.foto] || "Amigu sob encomenda") : "";
+      return '<section class="tam-secao" id="tamanho-' + t.id + '">' +
+        '<div class="tam-cab' + (t.foto ? "" : " sem-foto") + '">' +
+        (t.foto
+          ? '<div class="galeria tam-capa"><button type="button" data-src="' + capa + '" data-nome="' + esc(nomeCapa + " · " + t.nome + " (" + t.medida + ") · " + precoTxt(t)) + '"><img src="' + capa + '" alt="' + esc(t.nome + ": " + nomeCapa) + '"><span>' + esc(nomeCapa.split(" · ")[0]) + "</span></button></div>"
+          : '<div class="tam-capa vazia">' + (t.emBreve ? '<span class="selo rosa">Fotos em breve</span>' : "") + '<img src="' + capa + '" alt=""></div>') +
         '<div class="tb-info"><h3>' + esc(t.nome) + '</h3><p class="tb-medida">' + esc(t.medida) + "</p>" +
         (t.nota ? '<p class="tb-nota">' + esc(t.nota) + "</p>" : "") +
+        (qtd ? '<p class="tb-nota">' + qtd + (qtd === 1 ? " modelo já feito" : " modelos já feitos") + " nesse tamanho</p>" : "") +
         '<p class="tb-preco">' + (t.aPartir ? "<small>a partir de</small> " : "") + esc(t.preco) + "</p>" +
-        '<a class="btn btn-whats" target="_blank" rel="noopener" href="' + whatsLink(msg) + '">' + ICON_WHATS + "Quero este pelo WhatsApp</a></div>" +
-        "</article>";
+        '<div class="botoes">' +
+        (t.sumup ? '<a class="btn btn-amarelo" target="_blank" rel="noopener" href="' + esc(C.lojaUrl + "product/" + t.sumup) + '">Comprar agora</a>' : "") +
+        '<a class="btn btn-whats" target="_blank" rel="noopener" href="' + whatsLink(msg) + '">' + ICON_WHATS + "Quero este pelo WhatsApp</a></div></div>" +
+        "</div>" +
+        (nums.length ? '<div class="galeria tam-fotos" data-tam="' + t.id + '"></div>' : "") +
+        "</section>";
     }).join("");
+    el.querySelectorAll(".tam-fotos").forEach(function (g) {
+      var id = g.getAttribute("data-tam"), t = tamanhoInfo(id), nums = [];
+      for (var i = 1; i <= total; i++) if (T[i] === id && i !== t.foto) nums.push(i);
+      window.amiguGaleria(g, null, nums, null, true);
+    });
   };
 
   /* ---------- Classes ---------- */
