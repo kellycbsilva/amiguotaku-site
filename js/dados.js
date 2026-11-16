@@ -157,14 +157,9 @@ window.AMIGU_PRODUTOS = [
     descricao: "Versão pequena da torre de dragão de boca aberta. Fotos em breve."
   },
   {
-    id: "case-livro-pequeno", nome: "Case livro pequeno com logo e ímã", categorias: ["rpg", "3d"], preco: "R$ 55,00", placeholder: true, novo: true,
-    resumo: "Porta-dados em formato de livro, com fechamento por ímã.",
-    descricao: "Versão compacta do grimório porta-dados, com logo na capa e fechamento magnético. Fotos em breve."
-  },
-  {
-    id: "d20-gigante", nome: "D20 gigante montagem plana", categorias: ["rpg", "3d"], preco: "R$ 49,90", placeholder: true, novo: true,
+    id: "d20-gigante", nome: "Dado gigante D20", categorias: ["rpg", "3d"], preco: "R$ 49,90", placeholder: true, novo: true,
     resumo: "D20 gigante impresso em 3D, de montar.",
-    descricao: "Dado D20 em tamanho gigante, impresso em 3D com montagem plana. Fotos em breve."
+    descricao: "Dado D20 em tamanho gigante, impresso em 3D. Fotos em breve."
   },
   {
     id: "dragao-cobra", nome: "Dragão cobra cristal articulado", categorias: ["3d", "nerd"], preco: "R$ 34,90", placeholder: true, novo: true,
