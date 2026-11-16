@@ -230,32 +230,8 @@ window.AMIGU_PRODUTOS = [
     resumo: "Acessórios para deixar a mesa organizada e a partida mais rápida.",
     descricao: "Espaço reservado: aguardando fotos e detalhes do produto."
   },
-
-  /* ---------------- Amigurumis do site atual ---------------- */
-  {
-    id: "charizard", nome: "Charizard", serie: "Pokémon", categorias: ["amigurumi", "nerd"], preco: "R$ 129,90", tamanho: "M", destaque: true,
-    resumo: "O dragão mais icônico de Kanto em crochê. 20 cm.",
-    descricao: "Feito à mão com asas, cauda em chamas e muita nostalgia. Algodão 100% sustentável, 20 cm de altura. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
-    fotos: ["img/produtos/charizard-pokemon/01.jpg"], sumup: "charizard-pokemon"
-  },
-  {
-    id: "raiden", nome: "Raiden Shogun", serie: "Genshin Impact", categorias: ["amigurumi", "nerd"], preco: "R$ 179,90", tamanho: "G", destaque: true,
-    resumo: "A Arconte Electro em versão amigurumi, cheia de detalhes.",
-    descricao: "Fio de algodão, enchimento antialérgico e riqueza de detalhes, dos cabelos roxos à roupa inspirada em Inazuma. Disponível por encomenda, com envio para todo o Brasil. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
-    fotos: ["img/produtos/raiden-shogun-genshin-impact/01.jpg"], sumup: "raiden-shogun-genshin-impact"
-  },
-  {
-    id: "stitch", nome: "Stitch", serie: "Lilo & Stitch", categorias: ["amigurumi", "nerd"], preco: "a partir de R$ 249,90", tamanho: "GG", destaque: true,
-    resumo: "Pura fofura alienígena com 30 cm.",
-    descricao: "Feito à mão com orelhas grandes e muito charme havaiano. Algodão 100% sustentável, 30 cm de altura. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
-    fotos: ["img/produtos/stitch-lilo-and-stitch/01.jpg"], sumup: "stitch-lilo-and-stitch"
-  },
-  {
-    id: "saitama", nome: "Saitama", serie: "One Punch Man", categorias: ["amigurumi", "nerd"], preco: "R$ 59,90", tamanho: "PP",
-    resumo: "O herói mais forte do universo, versão fofinha. 10 cm.",
-    descricao: "Detalhes fiéis e muita personalidade careca. Algodão 100% sustentável, 10 cm de altura. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
-    fotos: ["img/produtos/saitama-one-punch-man/01.jpg"], sumup: "saitama-one-punch-man"
-  }
+  /* Amigurumis: os produtos são as linhas de tamanho (Amigu Pocket, Chibi, Senpai, Deluxe e Titã),
+     montados a partir de AMIGU_TAMANHOS no fim deste arquivo. */
 ];
 
 /* Galeria de amigurumis já produzidos (fotos em img/amigurumi/NN.jpg).
@@ -286,11 +262,30 @@ window.AMIGU_TAMANHOS = [
   { id: "CP", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro P", medida: "até 6 cm", preco: "R$ 25,90", emBreve: true, sumup: "chaveiro-amigurumi-p-ate-6-cm" },
   { id: "CM", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro M", medida: "7 a 9 cm", preco: "R$ 39,90", emBreve: true, sumup: "chaveiro-amigurumi-m-7-a-9-cm" },
   { id: "CG", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro G", medida: "10 a 12 cm", preco: "R$ 49,90", emBreve: true, sumup: "chaveiro-amigurumi-g-10-a-12-cm" },
-  { id: "PP", tipo: "amigurumi", nome: "Amigurumi PP", medida: "até 10 cm", preco: "R$ 59,90", foto: 2 },
-  { id: "P", tipo: "amigurumi", nome: "Amigurumi P", medida: "11 a 15 cm", preco: "R$ 89,90", foto: 17 },
-  { id: "M", tipo: "amigurumi", nome: "Amigurumi M", medida: "16 a 20 cm", preco: "R$ 129,90", foto: 8 },
-  { id: "G", tipo: "amigurumi", nome: "Amigurumi G", medida: "21 a 30 cm", preco: "R$ 179,90", foto: 4 },
-  { id: "GG", tipo: "amigurumi", nome: "Amigurumi Gigante", medida: "acima de 30 cm", preco: "R$ 249,90", foto: 50, aPartir: true, nota: "Peças especiais" }
+  { id: "PP", tipo: "amigurumi", nome: "Amigu Pocket", medida: "até 10 cm", preco: "R$ 59,90", foto: 2,
+    fotosExtra: ["img/produtos/saitama-one-punch-man/01.jpg"], sumup: "amigu-pocket",
+    resumo: "Até 10 cm, cabe na palma da mão. Personagem à sua escolha.",
+    descricao: ["Pequeno no tamanho e enorme no carinho! O Amigu Pocket tem até 10 cm, cabe na palma da mão e acompanha você na mesa do trabalho, na estante ou na mochila. É feito à mão em crochê, ponto por ponto, com o personagem que você escolher.",
+      "Já fizemos neste tamanho: Denji (Chainsaw Man), Saitama (One Punch Man).", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
+  { id: "P", tipo: "amigurumi", nome: "Amigu Chibi", medida: "11 a 15 cm", preco: "R$ 89,90", foto: 17, sumup: "amigu-chibi",
+    resumo: "De 11 a 15 cm, fofura no estilo chibi. Personagem à sua escolha.",
+    descricao: ["Fofura no estilo chibi, com cabeça grande, corpinho pequeno e muitos detalhes. O Amigu Chibi mede de 11 a 15 cm e é perfeito para presentear ou começar sua coleção de personagens favoritos. Feito à mão em crochê.",
+      "Já fizemos neste tamanho: Yusuke, Kurama, Hiei e Kuwabara (Yu Yu Hakusho), Zoro, Time 7 de Naruto, Ino, Koro-sensei, Florzinha, Lindinha e Macaco Louco, Sem-Rosto, Minnie, BB-8 e Minecraft.", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
+  { id: "M", tipo: "amigurumi", nome: "Amigu Senpai", medida: "16 a 20 cm", preco: "R$ 129,90", foto: 8,
+    fotosExtra: ["img/produtos/charizard-pokemon/01.jpg"], sumup: "amigu-senpai",
+    resumo: "De 16 a 20 cm, com todos os detalhes. Personagem à sua escolha.",
+    descricao: ["O tamanho preferido de quem quer o personagem com todos os detalhes: roupas, acessórios e expressões. O Amigu Senpai mede de 16 a 20 cm, tem presença na estante e é feito à mão em crochê, peça por peça.",
+      "Já fizemos neste tamanho: Satoru Gojo, Itadori, Sasuke, Tsunade, Sanemi, Touka, Sailor Moon, Charizard e Pokémons, Danny Phantom, Kim Possible, Coraline, Haku, Remy, Lady Gyokyo e Helaine.", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
+  { id: "G", tipo: "amigurumi", nome: "Amigu Deluxe", medida: "21 a 30 cm", preco: "R$ 179,90", foto: 4,
+    fotosExtra: ["img/produtos/raiden-shogun-genshin-impact/01.jpg"], sumup: "amigu-deluxe",
+    resumo: "De 21 a 30 cm, peça de exposição. Personagem à sua escolha.",
+    descricao: ["Para quem quer um destaque de verdade na coleção. O Amigu Deluxe mede de 21 a 30 cm e capricha nos detalhes: cabelos, capas, armaduras e figurinos completos. É uma peça de exposição feita à mão em crochê.",
+      "Já fizemos neste tamanho: Raiden Shogun, Sephiroth, Albedo, Malévola, Black Lady, Obanai, Vampira, Gambit, Mestre Yoda, Sen, Princesa Diana e Príncipe.", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
+  { id: "GG", tipo: "amigurumi", nome: "Amigu Titã", medida: "acima de 30 cm", preco: "R$ 249,90", aPartir: true, foto: 50,
+    fotosExtra: ["img/produtos/stitch-lilo-and-stitch/01.jpg"], sumup: "amigu-tita",
+    resumo: "Acima de 30 cm, feito sob medida. Personagem à sua escolha.",
+    descricao: ["Peças especiais para quem quer um personagem gigante para abraçar ou exibir. O Amigu Titã passa dos 30 cm e é feito sob medida. O valor final depende do tamanho e dos detalhes do personagem, e nós combinamos tudo com você antes de começar.",
+      "Já fizemos neste tamanho: Stitch, Totoro, Kirby, Gojo e Frieren.", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] }
 ];
 window.AMIGU_GALERIA_TAMANHO = {
   1: "P", 2: "PP", 3: "M", 4: "G", 5: "G", 6: "G", 7: "G", 8: "M", 9: "P", 10: "G",
@@ -314,3 +309,20 @@ window.AMIGU_CLASSES = [
   { id: "paladino", nome: "Paladino", frase: "Juramento: nunca rolar fora da bandeja." },
   { id: "patrulheiro", nome: "Patrulheiro", frase: "Encontra o dado que rolou pra baixo do sofá." }
 ];
+
+/* Produtos de amigurumi = linhas de tamanho (aparecem no catálogo, na home e na página de amigurumis). */
+(function () {
+  var T = window.AMIGU_GALERIA_TAMANHO, total = window.AMIGU_GALERIA_TOTAL;
+  function foto(n) { return "img/amigurumi/" + (n < 10 ? "0" : "") + n + ".jpg"; }
+  window.AMIGU_TAMANHOS.forEach(function (t) {
+    if (t.tipo !== "amigurumi") return;
+    var fotos = [foto(t.foto)];
+    for (var i = 1; i <= total; i++) if (T[i] === t.id && i !== t.foto) fotos.push(foto(i));
+    fotos = fotos.concat(t.fotosExtra || []);
+    window.AMIGU_PRODUTOS.push({
+      id: "amigu-" + t.id.toLowerCase(), nome: t.nome, serie: (t.id === "GG" ? "Gigante" : t.id) + " · " + t.medida,
+      categorias: ["amigurumi", "nerd"], preco: (t.aPartir ? "a partir de " : "") + t.preco, destaque: true,
+      resumo: t.resumo, descricao: t.descricao.join(" "), fotos: fotos, sumup: t.sumup
+    });
+  });
+})();

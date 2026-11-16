@@ -218,8 +218,8 @@
       var nums = [];
       for (var i = 1; i <= total; i++) if (T[i] === t.id && i !== t.foto) nums.push(i);
       var capa = t.foto ? fotoGaleria(t.foto) : "img/mascote/pose-29.png";
-      var qtd = nums.length + (t.foto ? 1 : 0);
-      var msg = "Oi, Amigu Otaku! Quero um " + t.nome.replace("Amigurumi", "amigurumi").replace("Chaveiro", "chaveiro") +
+      var qtd = nums.length + (t.foto ? 1 : 0) + (t.fotosExtra || []).length;
+      var msg = "Oi, Amigu Otaku! Quero um " + t.nome.replace("Chaveiro", "chaveiro") +
         " (" + t.medida + ", " + precoTxt(t) + "). Pode me ajudar?";
       var nomeCapa = t.foto ? (window.AMIGU_GALERIA[t.foto] || "Amigu sob encomenda") : "";
       return '<section class="tam-secao" id="tamanho-' + t.id + '">' +
@@ -227,7 +227,8 @@
         (t.foto
           ? '<div class="galeria tam-capa"><button type="button" data-src="' + capa + '" data-nome="' + esc(nomeCapa + " · " + t.nome + " (" + t.medida + ") · " + precoTxt(t)) + '"><img src="' + capa + '" alt="' + esc(t.nome + ": " + nomeCapa) + '"><span>' + esc(nomeCapa.split(" · ")[0]) + "</span></button></div>"
           : '<div class="tam-capa vazia">' + (t.emBreve ? '<span class="selo rosa">Fotos em breve</span>' : "") + '<img src="' + capa + '" alt=""></div>') +
-        '<div class="tb-info"><h3>' + esc(t.nome) + '</h3><p class="tb-medida">' + esc(t.medida) + "</p>" +
+        '<div class="tb-info"><h3>' + esc(t.nome) + '</h3><p class="tb-medida">' + (t.tipo === "amigurumi" ? esc(curto(t)) + " · " : "") + esc(t.medida) + "</p>" +
+        (t.descricao ? t.descricao.map(function (d) { return '<p class="tb-desc">' + esc(d) + "</p>"; }).join("") : "") +
         (t.nota ? '<p class="tb-nota">' + esc(t.nota) + "</p>" : "") +
         (qtd ? '<p class="tb-nota">' + qtd + (qtd === 1 ? " modelo já feito" : " modelos já feitos") + " nesse tamanho</p>" : "") +
         '<p class="tb-preco">' + (t.aPartir ? "<small>a partir de</small> " : "") + esc(t.preco) + "</p>" +
@@ -235,13 +236,16 @@
         (t.sumup ? '<a class="btn btn-amarelo" target="_blank" rel="noopener" href="' + esc(C.lojaUrl + "product/" + t.sumup) + '">Comprar agora</a>' : "") +
         '<a class="btn btn-whats" target="_blank" rel="noopener" href="' + whatsLink(msg) + '">' + ICON_WHATS + "Quero este pelo WhatsApp</a></div></div>" +
         "</div>" +
-        (nums.length ? '<div class="galeria tam-fotos" data-tam="' + t.id + '"></div>' : "") +
+        (nums.length || t.fotosExtra ? '<div class="galeria tam-fotos" data-tam="' + t.id + '"></div>' : "") +
         "</section>";
     }).join("");
     el.querySelectorAll(".tam-fotos").forEach(function (g) {
       var id = g.getAttribute("data-tam"), t = tamanhoInfo(id), nums = [];
       for (var i = 1; i <= total; i++) if (T[i] === id && i !== t.foto) nums.push(i);
       window.amiguGaleria(g, null, nums, null, true);
+      (t.fotosExtra || []).forEach(function (src) {
+        g.insertAdjacentHTML("beforeend", '<button type="button" data-src="' + src + '" data-nome="' + esc(t.nome) + '"><img src="' + src + '" alt="' + esc(t.nome) + '" loading="lazy"></button>');
+      });
     });
   };
 
