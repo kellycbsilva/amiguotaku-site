@@ -46,6 +46,19 @@
   <section class="secao" style="padding-top:0">
     <div class="container">
       <div class="secao-cab">
+        <h2>Preços por tamanho</h2>
+        <p class="lead">Escolha o tamanho, mande o personagem que você quer e a gente faz o seu Amigu à mão.</p>
+      </div>
+      <h3 class="tamanhos-sub">Amigurumis</h3>
+      <div class="tamanhos" id="tamanhos-amigurumi"></div>
+      <h3 class="tamanhos-sub">Chaveiros</h3>
+      <div class="tamanhos" id="tamanhos-chaveiro"></div>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="container">
+      <div class="secao-cab">
         <h2>Galeria de personagens</h2>
         <p class="lead">Gostou de algum? Clique na foto e peça um parecido. Os valores variam conforme tamanho e detalhes.</p>
       </div>
@@ -78,6 +91,8 @@
 <script src="js/app.js?v=20261116"></script>
 <script>
   amiguRender(document.getElementById("grade"), AMIGU_PRODUTOS.filter(function (p) { return p.categorias.indexOf("amigurumi") > -1; }));
+  amiguTabelaTamanhos(document.getElementById("tamanhos-amigurumi"), "amigurumi");
+  amiguTabelaTamanhos(document.getElementById("tamanhos-chaveiro"), "chaveiro");
   amiguGaleria(document.getElementById("galeria"));
   amiguFiltroTamanho(document.getElementById("filtro-tamanho"), document.getElementById("galeria"));
 </script>

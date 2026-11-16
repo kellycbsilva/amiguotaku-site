@@ -233,25 +233,25 @@ window.AMIGU_PRODUTOS = [
 
   /* ---------------- Amigurumis do site atual ---------------- */
   {
-    id: "charizard", nome: "Charizard", serie: "Pokémon", categorias: ["amigurumi", "nerd"], preco: "R$ 149,90", destaque: true,
+    id: "charizard", nome: "Charizard", serie: "Pokémon", categorias: ["amigurumi", "nerd"], preco: "R$ 179,90", tamanho: "G", destaque: true,
     resumo: "O dragão mais icônico de Kanto em crochê. 20 cm.",
     descricao: "Feito à mão com asas, cauda em chamas e muita nostalgia. Algodão 100% sustentável, 20 cm de altura.",
     fotos: ["img/produtos/charizard-pokemon/01.jpg"], sumup: "charizard-pokemon"
   },
   {
-    id: "raiden", nome: "Raiden Shogun", serie: "Genshin Impact", categorias: ["amigurumi", "nerd"], preco: "R$ 220,00", destaque: true,
+    id: "raiden", nome: "Raiden Shogun", serie: "Genshin Impact", categorias: ["amigurumi", "nerd"], preco: "R$ 179,90", tamanho: "G", destaque: true,
     resumo: "A Arconte Electro em versão amigurumi, cheia de detalhes.",
     descricao: "Fio de algodão, enchimento antialérgico e riqueza de detalhes, dos cabelos roxos à roupa inspirada em Inazuma. Disponível por encomenda, com envio para todo o Brasil.",
     fotos: ["img/produtos/raiden-shogun-genshin-impact/01.jpg"], sumup: "raiden-shogun-genshin-impact"
   },
   {
-    id: "stitch", nome: "Stitch", serie: "Lilo & Stitch", categorias: ["amigurumi", "nerd"], preco: "R$ 229,90", destaque: true,
+    id: "stitch", nome: "Stitch", serie: "Lilo & Stitch", categorias: ["amigurumi", "nerd"], preco: "a partir de R$ 249,90", tamanho: "GG", destaque: true,
     resumo: "Pura fofura alienígena com 30 cm.",
     descricao: "Feito à mão com orelhas grandes e muito charme havaiano. Algodão 100% sustentável, 30 cm de altura.",
     fotos: ["img/produtos/stitch-lilo-and-stitch/01.jpg"], sumup: "stitch-lilo-and-stitch"
   },
   {
-    id: "saitama", nome: "Saitama", serie: "One Punch Man", categorias: ["amigurumi", "nerd"], preco: "R$ 79,90",
+    id: "saitama", nome: "Saitama", serie: "One Punch Man", categorias: ["amigurumi", "nerd"], preco: "R$ 59,90", tamanho: "PP",
     resumo: "O herói mais forte do universo, versão fofinha. 10 cm.",
     descricao: "Detalhes fiéis e muita personalidade careca. Algodão 100% sustentável, 10 cm de altura.",
     fotos: ["img/produtos/saitama-one-punch-man/01.jpg"], sumup: "saitama-one-punch-man"
@@ -265,28 +265,40 @@ window.AMIGU_GALERIA = {
   6: "Sephiroth · Final Fantasy", 7: "Albedo · Overlord", 8: "Tsunade · Naruto",
   9: "Sem-Rosto · A Viagem de Chihiro", 11: "Malévola",
   13: "Kuwabara · Yu Yu Hakusho", 14: "Kurama · Yu Yu Hakusho", 15: "Van Helsing", 16: "Hiei · Yu Yu Hakusho",
-  17: "Inosuke · Demon Slayer", 18: "Haku · A Viagem de Chihiro", 19: "Hashira · Demon Slayer",
-  20: "Sen · A Viagem de Chihiro",
-  32: "Florzinha · Meninas Superpoderosas", 33: "Docinho · Meninas Superpoderosas",
-  35: "Macaco Louco · Meninas Superpoderosas", 46: "Tiana", 49: "Gojo · Jujutsu Kaisen",
-  50: "Totoro", 51: "Kirby", 52: "Stitch", 54: "Sailor Moon", 56: "Creeper e Enderman · Minecraft",
-  57: "Mestre Yoda", 58: "Charizard", 59: "Pikachu, Charmander e Squirtle", 60: "BB-8",
-  61: "Coraline", 62: "Koro-sensei · Assassination Classroom"
+  17: "Yusuke · Yu Yu Hakusho", 18: "Haku · A Viagem de Chihiro", 19: "Sanemi · Demon Slayer",
+  20: "Sen · A Viagem de Chihiro", 22: "Satoru Gojo · Jujutsu Kaisen", 23: "Black Lady",
+  25: "Itadori · Jujutsu Kaisen", 29: "Sasuke · Naruto", 30: "Obanai · Demon Slayer", 31: "Vampira",
+  32: "Florzinha · Meninas Superpoderosas", 33: "Lindinha · Meninas Superpoderosas",
+  35: "Macaco Louco · Meninas Superpoderosas", 36: "Lady Gyokyo", 38: "Touka · Tokyo Ghoul",
+  39: "Zoro · One Piece", 40: "Príncipe", 41: "Danny Phantom", 43: "Ino · Naruto", 44: "Gambit · X-Men",
+  46: "Princesa Diana", 47: "Elaine", 48: "Kim Possible", 49: "Gojo · Jujutsu Kaisen",
+  50: "Totoro", 51: "Kirby", 52: "Stitch", 54: "Sailor Moon", 55: "Time 7 · Naruto",
+  56: "Creeper e Enderman · Minecraft", 57: "Mestre Yoda", 58: "Charizard", 59: "Pikachu, Charmander e Squirtle",
+  60: "BB-8", 61: "Coraline", 62: "Koro-sensei · Assassination Classroom", 63: "Frieren"
 };
 window.AMIGU_GALERIA_TOTAL = 63;
 
 /* Tamanho de cada foto da galeria (tabela de preços por tamanho).
    PP até 10 cm · P 11 a 15 cm · M 16 a 20 cm · G 21 a 30 cm · GG acima de 30 cm */
+/* Tabela de preços por tamanho. "foto" = número da foto da galeria usada como exemplo
+   (sem foto, aparece o mascote). "aPartir" = mostra "a partir de". */
 window.AMIGU_TAMANHOS = [
-  { id: "PP", nome: "PP · até 10 cm" },
-  { id: "P", nome: "P · 11 a 15 cm" },
-  { id: "M", nome: "M · 16 a 20 cm" },
-  { id: "G", nome: "G · 21 a 30 cm" },
-  { id: "GG", nome: "Gigante · acima de 30 cm" }
+  { id: "CP", tipo: "chaveiro", nome: "Chaveiro P", medida: "até 6 cm", preco: "R$ 25,90", emBreve: true },
+  { id: "CM", tipo: "chaveiro", nome: "Chaveiro M", medida: "7 a 9 cm", preco: "R$ 39,90", emBreve: true },
+  { id: "CG", tipo: "chaveiro", nome: "Chaveiro G", medida: "10 a 12 cm", preco: "R$ 49,90", emBreve: true },
+  { id: "PP", tipo: "amigurumi", nome: "Amigurumi PP", medida: "até 10 cm", preco: "R$ 59,90", foto: 2 },
+  { id: "P", tipo: "amigurumi", nome: "Amigurumi P", medida: "11 a 15 cm", preco: "R$ 89,90", foto: 17 },
+  { id: "M", tipo: "amigurumi", nome: "Amigurumi M", medida: "16 a 20 cm", preco: "R$ 129,90", foto: 8 },
+  { id: "G", tipo: "amigurumi", nome: "Amigurumi G", medida: "21 a 30 cm", preco: "R$ 179,90", foto: 4 },
+  { id: "GG", tipo: "amigurumi", nome: "Amigurumi Gigante", medida: "acima de 30 cm", preco: "R$ 249,90", foto: 50, aPartir: true, nota: "Peças especiais" }
 ];
 window.AMIGU_GALERIA_TAMANHO = {
   1: "P", 2: "PP", 3: "M", 4: "G", 5: "G", 6: "G", 7: "G", 8: "M", 9: "P", 10: "G",
-  11: "G", 12: "G", 13: "P", 14: "P", 15: "P", 16: "P", 17: "P", 18: "M", 19: "M", 20: "G", 21: "G"
+  11: "G", 12: "G", 13: "P", 14: "P", 15: "P", 16: "P", 17: "P", 18: "M", 19: "M", 20: "G", 21: "G",
+  22: "M", 23: "G", 24: "G", 25: "M", 26: "G", 27: "M", 28: "G", 29: "M", 30: "G", 31: "G", 32: "P", 33: "P",
+  34: "P", 35: "P", 36: "M", 37: "M", 38: "M", 39: "P", 40: "G", 41: "M", 42: "M", 43: "P",
+  44: "G", 45: "G", 46: "G", 47: "M", 48: "M", 49: "GG", 50: "GG", 51: "GG", 52: "GG", 53: "G",
+  54: "M", 55: "P", 56: "P", 57: "G", 58: "G", 59: "G", 60: "P", 61: "M", 62: "P", 63: "GG"
 };
 
 /* Classes de RPG do mascote (img/classes/<id>.jpg) */

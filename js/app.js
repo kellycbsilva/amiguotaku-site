@@ -191,20 +191,27 @@
     el.innerHTML = nums.map(function (n) {
       var src = "img/amigurumi/" + (n < 10 ? "0" : "") + n + ".jpg";
       var nome = G[n] || "Amigu sob encomenda";
-      var tam = T[n] ? (T[n] === "GG" ? "Gigante" : T[n]) : "";
-      return '<button type="button" data-src="' + src + '" data-nome="' + esc(nome + (tam ? " · tamanho " + tam : "")) + '"><img src="' + src + '" alt="Amigurumi ' + esc(nome) + '" loading="lazy">' +
-        (tam ? '<b class="tam" aria-label="Tamanho ' + tam + '">' + tam + "</b>" : "") +
+      var t = tamanhoInfo(T[n]);
+      var rot = t ? curto(t) : "";
+      return '<button type="button" data-src="' + src + '" data-nome="' + esc(nome + (t ? " · tamanho " + rot + " (" + t.medida + ") · " + precoTxt(t) : "")) + '"><img src="' + src + '" alt="Amigurumi ' + esc(nome) + '" loading="lazy">' +
+        (t ? '<b class="tam" aria-label="Tamanho ' + esc(rot) + ", " + esc(precoTxt(t)) + '">' + esc(rot) + " · " + esc(t.preco) + "</b>" : "") +
         (G[n] ? "<span>" + esc(G[n].split(" · ")[0]) + "</span>" : "") + "</button>";
     }).join("");
   };
+  function tamanhoInfo(id) {
+    return id ? (window.AMIGU_TAMANHOS || []).filter(function (t) { return t.id === id; })[0] : null;
+  }
+  function curto(t) { return t.id === "GG" ? "Gigante" : t.tipo === "chaveiro" ? t.nome : t.id; }
+  function precoTxt(t) { return (t.aPartir ? "a partir de " : "") + t.preco; }
 
   /* Filtro de tamanho da galeria */
   window.amiguFiltroTamanho = function (filtroEl, galeriaEl) {
     var T = window.AMIGU_GALERIA_TAMANHO || {}, usados = {};
     Object.keys(T).forEach(function (k) { usados[T[k]] = true; });
-    var lista = [{ id: "", nome: "Todos os tamanhos" }].concat((window.AMIGU_TAMANHOS || []).filter(function (t) { return usados[t.id]; }));
+    var lista = [{ id: "", rotulo: "Todos os tamanhos" }].concat((window.AMIGU_TAMANHOS || []).filter(function (t) { return usados[t.id]; }));
     filtroEl.innerHTML = lista.map(function (t) {
-      return '<button type="button" data-tam="' + t.id + '" aria-pressed="' + (t.id === "") + '">' + esc(t.nome) + "</button>";
+      var txt = t.rotulo || curto(t) + " · " + t.medida + " · " + precoTxt(t);
+      return '<button type="button" data-tam="' + t.id + '" aria-pressed="' + (t.id === "") + '">' + esc(txt) + "</button>";
     }).join("");
     filtroEl.addEventListener("click", function (e) {
       var b = e.target.closest("button[data-tam]");
@@ -212,6 +219,24 @@
       filtroEl.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
       window.amiguGaleria(galeriaEl, null, null, b.getAttribute("data-tam") || null);
     });
+  };
+
+  /* ---------- Tabela de preços por tamanho ---------- */
+  window.amiguTabelaTamanhos = function (el, tipo) {
+    var lista = (window.AMIGU_TAMANHOS || []).filter(function (t) { return !tipo || t.tipo === tipo; });
+    el.innerHTML = lista.map(function (t) {
+      var foto = t.foto ? "img/amigurumi/" + (t.foto < 10 ? "0" : "") + t.foto + ".jpg" : "img/mascote/pose-29.png";
+      var msg = "Oi, Amigu Otaku! Quero um " + t.nome.replace("Amigurumi", "amigurumi").replace("Chaveiro", "chaveiro") +
+        " (" + t.medida + ", " + precoTxt(t) + "). Pode me ajudar?";
+      return '<article class="tamanho-bloco' + (t.foto ? "" : " sem-foto") + '">' +
+        '<div class="tb-foto">' + (t.emBreve ? '<span class="selo rosa">Fotos em breve</span>' : "") +
+        '<img src="' + foto + '" alt="' + (t.foto ? "Exemplo de " + esc(t.nome) : "") + '" loading="lazy"></div>' +
+        '<div class="tb-info"><h3>' + esc(t.nome) + '</h3><p class="tb-medida">' + esc(t.medida) + "</p>" +
+        (t.nota ? '<p class="tb-nota">' + esc(t.nota) + "</p>" : "") +
+        '<p class="tb-preco">' + (t.aPartir ? "<small>a partir de</small> " : "") + esc(t.preco) + "</p>" +
+        '<a class="btn btn-whats" target="_blank" rel="noopener" href="' + whatsLink(msg) + '">' + ICON_WHATS + "Quero este pelo WhatsApp</a></div>" +
+        "</article>";
+    }).join("");
   };
 
   /* ---------- Classes ---------- */
