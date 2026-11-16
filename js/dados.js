@@ -60,7 +60,7 @@ window.AMIGU_PRODUTOS = [
     fotos: fotos("case-retangular", 10), sumup: "case-retangular"
   },
   {
-    id: "kit-de-dados", nome: "Kit de dados perolados", categorias: ["rpg"], preco: "R$ 29,90",
+    id: "kit-de-dados", nome: "Kit de dados perolados", categorias: ["rpg"], preco: "R$ 35,00",
     resumo: "Conjunto com os 7 dados clássicos: D4, D6, D8, D10, D%, D12 e D20.",
     descricao: "Dados com acabamento perolado e numeração de alta legibilidade, em diversas cores. Combine com uma case ou torre para uma experiência completa.",
     fotos: fotos("kit-de-dados-para-rpg", 5), sumup: "kit-de-dados-para-rpg"
