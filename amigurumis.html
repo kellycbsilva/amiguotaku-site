@@ -46,11 +46,20 @@
   <section class="secao" style="padding-top:0">
     <div class="container">
       <div class="secao-cab">
-        <h2>Amigurumis por tamanho</h2>
-        <p class="lead">Escolha o tamanho, veja os personagens que já fizemos e peça o seu. Clique em qualquer foto para ampliar.</p>
+        <h2>Chaveiros amigurumi</h2>
+        <p class="lead">Seu personagem favorito pendurado na mochila ou nas chaves. Fotos em breve.</p>
       </div>
-      <nav class="filtros" id="tamanhos-nav" aria-label="Ir para o tamanho"></nav>
-      <div id="tamanhos-secoes"></div>
+      <div class="grade" id="grade-chaveiros"></div>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="container">
+      <details class="ja-fizemos">
+        <summary>Veja todos os Amigus que já fizemos <span id="ja-fizemos-total"></span></summary>
+        <p class="lead">Clique na foto para ampliar. A etiqueta mostra o tamanho e o preço daquele modelo.</p>
+        <div class="galeria" id="galeria"></div>
+      </details>
     </div>
   </section>
 
@@ -75,10 +84,12 @@
 
 <script src="js/config.js"></script>
 <script src="js/dados.js"></script>
-<script src="js/app.js?v=20261116"></script>
+<script src="js/app.js?v=20261117"></script>
 <script>
-  amiguRender(document.getElementById("grade"), AMIGU_PRODUTOS.filter(function (p) { return p.categorias.indexOf("amigurumi") > -1; }));
-  amiguSecoesTamanho(document.getElementById("tamanhos-nav"), document.getElementById("tamanhos-secoes"));
+  amiguRender(document.getElementById("grade"), AMIGU_PRODUTOS.filter(function (p) { return p.id.indexOf("amigu-") === 0; }));
+  amiguRender(document.getElementById("grade-chaveiros"), AMIGU_PRODUTOS.filter(function (p) { return p.id.indexOf("chaveiro-") === 0; }));
+  amiguGaleria(document.getElementById("galeria"));
+  document.getElementById("ja-fizemos-total").textContent = "(" + AMIGU_GALERIA_TOTAL + " fotos)";
 </script>
 </body>
 </html>

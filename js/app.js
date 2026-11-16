@@ -101,8 +101,8 @@
         '<div class="txt"><span class="aviso">Espaço reservado · aguardando fotos</span><h3>' + esc(p.nome) + "</h3>" +
         '<p class="resumo">' + esc(p.resumo) + '</p><span class="preco">' + esc(p.preco) + "</span></div></article>";
     }
-    return '<button class="card" type="button" data-id="' + p.id + '" aria-haspopup="dialog">' +
-      '<div class="img">' + selo(p) + (p.video ? '<span class="selo rosa tem-video">▶ Vídeo</span>' : "") + '<img src="' + p.fotos[0] + '" alt="' + esc(p.nome) + '" loading="lazy"></div>' +
+    return '<button class="card' + (p.semFoto ? " sem-foto" : "") + '" type="button" data-id="' + p.id + '" aria-haspopup="dialog">' +
+      '<div class="img">' + (p.semFoto ? '<span class="selo rosa">Fotos em breve</span>' : selo(p)) + (p.video ? '<span class="selo rosa tem-video">▶ Vídeo</span>' : "") + '<img src="' + p.fotos[0] + '" alt="' + esc(p.nome) + '" loading="lazy"></div>' +
       '<div class="txt"><h3>' + esc(p.nome) + "</h3>" +
       (p.serie ? '<p class="serie">' + esc(p.serie) + "</p>" : "") +
       '<p class="resumo">' + esc(p.resumo) + '</p><span class="preco">' + esc(p.preco) + "</span></div></button>";

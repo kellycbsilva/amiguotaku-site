@@ -262,26 +262,26 @@ window.AMIGU_TAMANHOS = [
   { id: "CP", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro P", medida: "até 6 cm", preco: "R$ 25,90", emBreve: true, sumup: "chaveiro-amigurumi-p-ate-6-cm" },
   { id: "CM", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro M", medida: "7 a 9 cm", preco: "R$ 39,90", emBreve: true, sumup: "chaveiro-amigurumi-m-7-a-9-cm" },
   { id: "CG", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro G", medida: "10 a 12 cm", preco: "R$ 49,90", emBreve: true, sumup: "chaveiro-amigurumi-g-10-a-12-cm" },
-  { id: "PP", tipo: "amigurumi", nome: "Amigu Pocket", medida: "até 10 cm", preco: "R$ 59,90", foto: 2,
+  { id: "PP", tipo: "amigurumi", fotosLoja: ["img/amigurumi/02.jpg", "img/produtos/saitama-one-punch-man/01.jpg"], nome: "Amigu Pocket", medida: "até 10 cm", preco: "R$ 59,90", foto: 2,
     fotosExtra: ["img/produtos/saitama-one-punch-man/01.jpg"], sumup: "amigu-pocket",
     resumo: "Até 10 cm, cabe na palma da mão. Personagem à sua escolha.",
     descricao: ["Pequeno no tamanho e enorme no carinho! O Amigu Pocket tem até 10 cm, cabe na palma da mão e acompanha você na mesa do trabalho, na estante ou na mochila. É feito à mão em crochê, ponto por ponto, com o personagem que você escolher.",
       "Já fizemos neste tamanho: Denji (Chainsaw Man), Saitama (One Punch Man).", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
-  { id: "P", tipo: "amigurumi", nome: "Amigu Chibi", medida: "11 a 15 cm", preco: "R$ 89,90", foto: 17, sumup: "amigu-chibi",
+  { id: "P", tipo: "amigurumi", fotosLoja: ["img/amigurumi/17.jpg", "img/amigurumi/14.jpg", "img/amigurumi/16.jpg", "img/amigurumi/39.jpg", "img/amigurumi/09.jpg", "img/amigurumi/62.jpg", "img/amigurumi/01.jpg"], nome: "Amigu Chibi", medida: "11 a 15 cm", preco: "R$ 89,90", foto: 17, sumup: "amigu-chibi",
     resumo: "De 11 a 15 cm, fofura no estilo chibi. Personagem à sua escolha.",
     descricao: ["Fofura no estilo chibi, com cabeça grande, corpinho pequeno e muitos detalhes. O Amigu Chibi mede de 11 a 15 cm e é perfeito para presentear ou começar sua coleção de personagens favoritos. Feito à mão em crochê.",
       "Já fizemos neste tamanho: Yusuke, Kurama, Hiei e Kuwabara (Yu Yu Hakusho), Zoro, Time 7 de Naruto, Ino, Koro-sensei, Florzinha, Lindinha e Macaco Louco, Sem-Rosto, Minnie, BB-8 e Minecraft.", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
-  { id: "M", tipo: "amigurumi", nome: "Amigu Senpai", medida: "16 a 20 cm", preco: "R$ 129,90", foto: 8,
+  { id: "M", tipo: "amigurumi", fotosLoja: ["img/amigurumi/08.jpg", "img/amigurumi/22.jpg", "img/amigurumi/29.jpg", "img/amigurumi/58.jpg", "img/amigurumi/54.jpg", "img/amigurumi/61.jpg", "img/amigurumi/38.jpg"], nome: "Amigu Senpai", medida: "16 a 20 cm", preco: "R$ 129,90", foto: 8,
     fotosExtra: ["img/produtos/charizard-pokemon/01.jpg"], sumup: "amigu-senpai",
     resumo: "De 16 a 20 cm, com todos os detalhes. Personagem à sua escolha.",
     descricao: ["O tamanho preferido de quem quer o personagem com todos os detalhes: roupas, acessórios e expressões. O Amigu Senpai mede de 16 a 20 cm, tem presença na estante e é feito à mão em crochê, peça por peça.",
       "Já fizemos neste tamanho: Satoru Gojo, Itadori, Sasuke, Tsunade, Sanemi, Touka, Sailor Moon, Charizard e Pokémons, Danny Phantom, Kim Possible, Coraline, Haku, Remy, Lady Gyokyo e Helaine.", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
-  { id: "G", tipo: "amigurumi", nome: "Amigu Deluxe", medida: "21 a 30 cm", preco: "R$ 179,90", foto: 4,
+  { id: "G", tipo: "amigurumi", fotosLoja: ["img/amigurumi/04.jpg", "img/amigurumi/06.jpg", "img/amigurumi/07.jpg", "img/amigurumi/11.jpg", "img/amigurumi/57.jpg", "img/amigurumi/44.jpg", "img/amigurumi/20.jpg"], nome: "Amigu Deluxe", medida: "21 a 30 cm", preco: "R$ 179,90", foto: 4,
     fotosExtra: ["img/produtos/raiden-shogun-genshin-impact/01.jpg"], sumup: "amigu-deluxe",
     resumo: "De 21 a 30 cm, peça de exposição. Personagem à sua escolha.",
     descricao: ["Para quem quer um destaque de verdade na coleção. O Amigu Deluxe mede de 21 a 30 cm e capricha nos detalhes: cabelos, capas, armaduras e figurinos completos. É uma peça de exposição feita à mão em crochê.",
       "Já fizemos neste tamanho: Raiden Shogun, Sephiroth, Albedo, Malévola, Black Lady, Obanai, Vampira, Gambit, Mestre Yoda, Sen, Princesa Diana e Príncipe.", "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra."] },
-  { id: "GG", tipo: "amigurumi", nome: "Amigu Titã", medida: "acima de 30 cm", preco: "R$ 249,90", aPartir: true, foto: 50,
+  { id: "GG", tipo: "amigurumi", fotosLoja: ["img/amigurumi/50.jpg", "img/amigurumi/52.jpg", "img/produtos/stitch-lilo-and-stitch/01.jpg", "img/amigurumi/51.jpg", "img/amigurumi/49.jpg", "img/amigurumi/63.jpg"], nome: "Amigu Titã", medida: "acima de 30 cm", preco: "R$ 249,90", aPartir: true, foto: 50,
     fotosExtra: ["img/produtos/stitch-lilo-and-stitch/01.jpg"], sumup: "amigu-tita",
     resumo: "Acima de 30 cm, feito sob medida. Personagem à sua escolha.",
     descricao: ["Peças especiais para quem quer um personagem gigante para abraçar ou exibir. O Amigu Titã passa dos 30 cm e é feito sob medida. O valor final depende do tamanho e dos detalhes do personagem, e nós combinamos tudo com você antes de começar.",
@@ -315,10 +315,18 @@ window.AMIGU_CLASSES = [
   var T = window.AMIGU_GALERIA_TAMANHO, total = window.AMIGU_GALERIA_TOTAL;
   function foto(n) { return "img/amigurumi/" + (n < 10 ? "0" : "") + n + ".jpg"; }
   window.AMIGU_TAMANHOS.forEach(function (t) {
-    if (t.tipo !== "amigurumi") return;
-    var fotos = [foto(t.foto)];
-    for (var i = 1; i <= total; i++) if (T[i] === t.id && i !== t.foto) fotos.push(foto(i));
-    fotos = fotos.concat(t.fotosExtra || []);
+    if (t.tipo === "chaveiro") {
+      window.AMIGU_PRODUTOS.push({
+        id: "chaveiro-" + t.id.toLowerCase(), nome: "Chaveiro amigurumi " + t.nome.replace("Chaveiro ", ""), serie: t.medida,
+        categorias: ["amigurumi", "nerd"], preco: t.preco, novo: true, semFoto: true,
+        resumo: "Chaveiro de crochê com o personagem que você quiser.",
+        descricao: "Chaveiro amigurumi feito à mão em crochê, " + t.medida + ". Cores e detalhes podem variar. " + t.nota,
+        fotos: ["img/mascote/pose-29.png"], sumup: t.sumup
+      });
+      return;
+    }
+    /* Mesmas fotos e mesma ordem da SumUp (capa primeiro). */
+    var fotos = t.fotosLoja || [foto(t.foto)];
     window.AMIGU_PRODUTOS.push({
       id: "amigu-" + t.id.toLowerCase(), nome: t.nome, serie: (t.id === "GG" ? "Gigante" : t.id) + " · " + t.medida,
       categorias: ["amigurumi", "nerd"], preco: (t.aPartir ? "a partir de " : "") + t.preco, destaque: true,
