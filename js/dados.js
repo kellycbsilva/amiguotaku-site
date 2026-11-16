@@ -26,37 +26,37 @@ window.AMIGU_PRODUTOS = [
   {
     id: "case-d20", nome: "Case D20 magnético", categorias: ["rpg", "3d"], preco: "R$ 50,00", destaque: true,
     resumo: "Porta-dados em formato de D20 gigante, com fechamento por ímãs.",
-    descricao: "Guarde seus dados com estilo dentro de um D20 gigante! Fechamento magnético firme e fácil de abrir, espaço interno para vários dados ou conjuntos completos, impressão 3D de alta qualidade. Cores variadas: preto, vermelho, amarelo, azul e metalizados.",
+    descricao: "Guarde seus dados com estilo dentro de um D20 gigante! Fechamento magnético firme e fácil de abrir, espaço interno para vários dados ou conjuntos completos, impressão 3D de alta qualidade. Cores variadas: preto, vermelho, amarelo, azul e metalizados. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("case-d20", 12), sumup: "case-d20", video: "videos/case-d20.mp4"
   },
   {
     id: "case-classes", nome: "Case de dados com classes", categorias: ["rpg", "3d"], preco: "R$ 45,00", destaque: true,
     resumo: "Case redonda para 7 dados, com a classe do seu personagem gravada na tampa.",
-    descricao: "Compartimentos individuais para até 7 dados poliédricos e tampa de encaixe com a classe à sua escolha (bárbaro, mago, ladino, clérigo e mais). Resistente, compacta e ótima para presentear jogadores e mestres. Ideal para D&D, Tormenta20, Pathfinder e outros sistemas.",
+    descricao: "Compartimentos individuais para até 7 dados poliédricos e tampa de encaixe com a classe à sua escolha (bárbaro, mago, ladino, clérigo e mais). Resistente, compacta e ótima para presentear jogadores e mestres. Ideal para D&D, Tormenta20, Pathfinder e outros sistemas. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("case-para-dados-rpg", 8), sumup: "case-para-dados-rpg"
   },
   {
     id: "torre-de-dados", nome: "Torre de dados medieval", categorias: ["rpg", "3d"], preco: "R$ 50,00", destaque: true,
     resumo: "Torre roladora em formato de castelo, com acabamento metálico.",
-    descricao: "Rampa interna que garante rolagens justas e cheias de impacto. Impressa em 3D com acabamento metálico e cores personalizáveis sob encomenda (o degradê roxo e dourado faz sucesso!). Tamanho compacto, cabe na mochila.",
+    descricao: "Rampa interna que garante rolagens justas e cheias de impacto. Impressa em 3D com acabamento metálico e cores personalizáveis sob encomenda (o degradê roxo e dourado faz sucesso!). Tamanho compacto, cabe na mochila. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-de-dados", 9), sumup: "torre-de-dados", video: "videos/torre-de-dados.mp4"
   },
   {
     id: "torre-dragao", nome: "Torre Fortaleza Dragão", categorias: ["rpg", "3d"], preco: "R$ 180,00", destaque: true, novo: true,
     resumo: "Torre de dados com um dragão no topo e bandeja de rolagem.",
-    descricao: "Versão épica da torre de dados, com um dragão guardando o castelo. Peça de centro de mesa para mestres e colecionadores. Cores e acabamento a combinar.",
+    descricao: "Versão épica da torre de dados, com um dragão guardando o castelo. Peça de centro de mesa para mestres e colecionadores. Cores e acabamento a combinar. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-dragao", 8), sumup: "torre-fortaleza-dragao", video: "videos/torre-dragao.mp4"
   },
   {
     id: "case-grimorio", nome: "Case Grimório Livro Torre", categorias: ["rpg", "3d"], preco: "R$ 85,00", destaque: true, novo: true,
     resumo: "Porta-dados em formato de livro de magias que abre como um tomo.",
-    descricao: "Um grimório que esconde seus dados! Abre como um livro e tem encaixes para o conjunto completo. Disponível com capa de D20 e outras artes. Cores a combinar.",
+    descricao: "Um grimório que esconde seus dados! Abre como um livro e tem encaixes para o conjunto completo. Disponível com capa de D20 e outras artes. Cores a combinar. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("case-grimorio", 10), sumup: "case-grimorio-livro-torre", video: "videos/case-grimorio.mp4"
   },
   {
     id: "case-retangular", nome: "Estojo retangular para dados", categorias: ["rpg", "3d"], preco: "R$ 35,00",
     resumo: "Estojo com encaixes moldados para os 7 dados (D4 a D20).",
-    descricao: "Estojo resistente e compacto com fechamento por trava e encaixe individual para cada dado, protegendo contra impactos e arranhões. Várias cores. Dados vendidos separadamente.",
+    descricao: "Estojo resistente e compacto com fechamento por trava e encaixe individual para cada dado, protegendo contra impactos e arranhões. Várias cores. Dados vendidos separadamente. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("case-retangular", 10), sumup: "case-retangular"
   },
   {
@@ -70,73 +70,73 @@ window.AMIGU_PRODUTOS = [
   {
     id: "torre-dragao-verde-caveira", nome: "Torre Dragão Caveira", categorias: ["rpg", "3d"], preco: "R$ 90,00", destaque: true, novo: true,
     resumo: "Uma caveira de dragão de boca aberta guarda a bandeja de rolagem.",
-    descricao: "Torre de dados em formato de caveira de dragão de boca aberta, com chifres e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda.",
+    descricao: "Torre de dados em formato de caveira de dragão de boca aberta, com chifres e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-dragao-verde-caveira", 3), sumup: "torre-dragao-verde-caveira", video: "videos/torre-dragao-verde-caveira.mp4"
   },
   {
     id: "torre-dragao-verde", nome: "Torre Dragão", categorias: ["rpg", "3d"], preco: "R$ 150,00", destaque: true, novo: true,
     resumo: "Um dragão de escamas detalhadas guarda a bandeja de rolagem.",
-    descricao: "Torre de dados em formato de cabeça de dragão de boca aberta, com escamas bem detalhadas e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda.",
+    descricao: "Torre de dados em formato de cabeça de dragão de boca aberta, com escamas bem detalhadas e bandeja de rolagem na base. Acabamento verde metálico; outras cores sob encomenda. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-dragao-verde", 5), sumup: "torre-dragao-verde", video: "videos/torre-dragao-verde.mp4"
   },
   {
     id: "torre-arvore", nome: "Torre de Dados Árvore Antiga", categorias: ["rpg", "3d"], preco: "R$ 120,00", novo: true,
     resumo: "Tronco retorcido com saída de dados entre as raízes.",
-    descricao: "Torre de dados inspirada em florestas encantadas: os dados entram pelos galhos e rolam para fora entre as raízes. Perfeita para mesas de druidas e patrulheiros.",
+    descricao: "Torre de dados inspirada em florestas encantadas: os dados entram pelos galhos e rolam para fora entre as raízes. Perfeita para mesas de druidas e patrulheiros. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-arvore", 4), sumup: "torre-de-dados-arvore-antiga", video: "videos/torre-arvore.mp4"
   },
   {
     id: "torre-caveira", nome: "Torre de Dados Caveira Crânio", categorias: ["rpg", "3d"], preco: "R$ 119,90", novo: true,
     resumo: "Os dados saem pela boca de uma caveira.",
-    descricao: "Torre de dados em formato de crânio, ideal para campanhas de terror e mestres necromantes. Cores a combinar.",
+    descricao: "Torre de dados em formato de crânio, ideal para campanhas de terror e mestres necromantes. Cores a combinar. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-caveira", 3), sumup: "torre-de-dados-caveira-cranio", video: "videos/torre-caveira.mp4"
   },
   {
     id: "torre-calice", nome: "Torre de Dados Cálice do Paladino", categorias: ["rpg", "3d"], preco: "R$ 60,00", novo: true,
     resumo: "Um cálice dourado que serve de torre e bandeja.",
-    descricao: "Torre de dados em formato de taça, com acabamento dourado. Elegante na mesa e ótima de presente para mestres.",
+    descricao: "Torre de dados em formato de taça, com acabamento dourado. Elegante na mesa e ótima de presente para mestres. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-calice", 5), sumup: "torre-de-dados-calice-do-paladino", video: "videos/torre-calice.mp4"
   },
   {
     id: "torre-espiral", nome: "Torre de Dados Escada Externa Espiral", categorias: ["rpg", "3d"], preco: "R$ 69,90", novo: true,
     resumo: "Os dados descem por uma escada em caracol até a bandeja.",
-    descricao: "Torre de dados com escadaria em caracol: dá para ver cada dado descendo degrau por degrau. Em azul metálico e outras cores.",
+    descricao: "Torre de dados com escadaria em caracol: dá para ver cada dado descendo degrau por degrau. Em azul metálico e outras cores. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-espiral", 2), sumup: "torre-de-dados-escada-externa-espiral", video: "videos/torre-espiral.mp4"
   },
   {
     id: "torre-escadaria-branca", nome: "Torre Escada Externa Espiral Melhorada", categorias: ["rpg", "3d"], preco: "R$ 100,00", novo: true,
     resumo: "Torre com escadaria externa e bandeja, em branco perolado.",
-    descricao: "Torre de dados com escadaria externa e bandeja de rolagem. Cores sob encomenda.",
+    descricao: "Torre de dados com escadaria externa e bandeja de rolagem. Cores sob encomenda. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-escadaria-branca", 3), sumup: "torre-escada-externa-espiral-melhorada", video: "videos/torre-escadaria-branca.mp4"
   },
   {
     id: "torre-castelo-negro", nome: "Castelo Sombrio", categorias: ["rpg", "3d"], preco: "R$ 180,00", novo: true,
     resumo: "Ruínas de um castelo escuro com bandeja de rolagem.",
-    descricao: "Torre de dados em formato de castelo em ruínas, em preto fosco. Clima perfeito para campanhas sombrias.",
+    descricao: "Torre de dados em formato de castelo em ruínas, em preto fosco. Clima perfeito para campanhas sombrias. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-castelo-negro", 4), sumup: "castelo-sombrio", video: "videos/torre-castelo-negro.mp4"
   },
   {
     id: "torre-sombria", nome: "Torre Sombria", categorias: ["rpg", "3d"], preco: "R$ 80,00", novo: true,
     resumo: "Torre alta e pontiaguda, de vilão de fim de campanha.",
-    descricao: "Torre de dados alta, em preto, com pináculo pontiagudo. Imponente no centro da mesa.",
+    descricao: "Torre de dados alta, em preto, com pináculo pontiagudo. Imponente no centro da mesa. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-sombria", 4), sumup: "torre-sombria", video: "videos/torre-sombria.mp4"
   },
   {
     id: "torre-observador", nome: "Torre Beholder", categorias: ["rpg", "3d"], preco: "R$ 169,90", novo: true,
     resumo: "Uma criatura de muitos olhos vigia a bandeja de dados.",
-    descricao: "Torre de dados com uma criatura de vários olhos no topo e bandeja redonda. Peça de destaque para colecionadores.",
+    descricao: "Torre de dados com uma criatura de vários olhos no topo e bandeja redonda. Peça de destaque para colecionadores. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-observador", 5), sumup: "torre-beholder", video: "videos/torre-observador.mp4"
   },
   {
     id: "torre-monge", nome: "Torre Mestre dos Magos", categorias: ["rpg", "3d"], preco: "R$ 250,00", novo: true,
     resumo: "Um sábio encapuzado que guarda e rola seus dados.",
-    descricao: "Torre de dados em formato de figura encapuzada, em branco. Cores sob encomenda.",
+    descricao: "Torre de dados em formato de figura encapuzada, em branco. Cores sob encomenda. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("torre-monge", 3), sumup: "torre-mestre-dos-magos", video: "videos/torre-monge.mp4"
   },
   {
     id: "dragao-articulado", nome: "Dragão Três Cabeças", categorias: ["3d", "nerd"], preco: "R$ 75,90", destaque: true, novo: true,
     resumo: "Dragão impresso em 3D que mexe o corpo, as asas e a cauda.",
-    descricao: "Dragão articulado impresso em 3D, com movimento no corpo e nas asas. Em azul e verde metálicos e outras cores. Ótimo para decorar a mesa ou presentear.",
+    descricao: "Dragão articulado impresso em 3D, com movimento no corpo e nas asas. Em azul e verde metálicos e outras cores. Ótimo para decorar a mesa ou presentear. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("dragao-articulado", 5), sumup: "dragao-tres-cabecas", video: "videos/dragao-articulado.mp4"
   },
 
@@ -181,25 +181,25 @@ window.AMIGU_PRODUTOS = [
   {
     id: "deckbox-energias", nome: "Deck Box Energias", categorias: ["tcg", "3d"], preco: "R$ 59,90", destaque: true, novo: true,
     resumo: "Deck box preta com símbolos de tipos de energia em relevo colorido.",
-    descricao: "Caixa para deck impressa em 3D, com tampa de encaixe e símbolos de energia em amarelo ou laranja. Comporta um deck com sleeves.",
+    descricao: "Caixa para deck impressa em 3D, com tampa de encaixe e símbolos de energia em amarelo ou laranja. Comporta um deck com sleeves. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("deckbox-energias", 5), sumup: "deck-box-energias"
   },
   {
     id: "deckbox-pokebola", nome: "Deck Box Pokébola", categorias: ["tcg", "3d"], preco: "R$ 59,90", destaque: true, novo: true,
     resumo: "Deck box com arte de Pokébola e personagem na tampa.",
-    descricao: "Caixa para deck impressa em 3D com estampa na tampa. Escolha a arte e as cores do seu time.",
+    descricao: "Caixa para deck impressa em 3D com estampa na tampa. Escolha a arte e as cores do seu time. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("deckbox-pokebola", 3), sumup: "deck-box-pokebola"
   },
   {
     id: "deckbox-grande", nome: "Porta Deck MTG Commander com Logo", categorias: ["tcg", "3d"], preco: "R$ 59,90", destaque: true, novo: true,
     resumo: "Caixa maior para decks grandes, com símbolo em relevo.",
-    descricao: "Deck box de tamanho maior, ideal para decks grandes com sleeves. Tampa de encaixe e símbolo em relevo. Cores a combinar.",
+    descricao: "Deck box de tamanho maior, ideal para decks grandes com sleeves. Tampa de encaixe e símbolo em relevo. Cores a combinar. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("deckbox-grande", 4), sumup: "porta-deck-mtg-commander-com-logo"
   },
   {
     id: "deckbox-bandeja", nome: "Case D&D", categorias: ["rpg", "3d"], preco: "R$ 40,00", novo: true,
     resumo: "Caixa temática com bandeja que guarda os dados em pé.",
-    descricao: "Caixa impressa em 3D com bandeja interna para dados, em verde e azul. Organiza cartas e dados num só lugar.",
+    descricao: "Caixa impressa em 3D com bandeja interna para dados, em verde e azul. Organiza cartas e dados num só lugar. Quer em alguma cor específica? É só escrever no campo de observação ao finalizar a compra.",
     fotos: fotos("deckbox-bandeja", 3), sumup: "case-dandd"
   },
   /* TCG: espaços reservados */
@@ -235,25 +235,25 @@ window.AMIGU_PRODUTOS = [
   {
     id: "charizard", nome: "Charizard", serie: "Pokémon", categorias: ["amigurumi", "nerd"], preco: "R$ 129,90", tamanho: "M", destaque: true,
     resumo: "O dragão mais icônico de Kanto em crochê. 20 cm.",
-    descricao: "Feito à mão com asas, cauda em chamas e muita nostalgia. Algodão 100% sustentável, 20 cm de altura.",
+    descricao: "Feito à mão com asas, cauda em chamas e muita nostalgia. Algodão 100% sustentável, 20 cm de altura. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
     fotos: ["img/produtos/charizard-pokemon/01.jpg"], sumup: "charizard-pokemon"
   },
   {
     id: "raiden", nome: "Raiden Shogun", serie: "Genshin Impact", categorias: ["amigurumi", "nerd"], preco: "R$ 179,90", tamanho: "G", destaque: true,
     resumo: "A Arconte Electro em versão amigurumi, cheia de detalhes.",
-    descricao: "Fio de algodão, enchimento antialérgico e riqueza de detalhes, dos cabelos roxos à roupa inspirada em Inazuma. Disponível por encomenda, com envio para todo o Brasil.",
+    descricao: "Fio de algodão, enchimento antialérgico e riqueza de detalhes, dos cabelos roxos à roupa inspirada em Inazuma. Disponível por encomenda, com envio para todo o Brasil. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
     fotos: ["img/produtos/raiden-shogun-genshin-impact/01.jpg"], sumup: "raiden-shogun-genshin-impact"
   },
   {
     id: "stitch", nome: "Stitch", serie: "Lilo & Stitch", categorias: ["amigurumi", "nerd"], preco: "a partir de R$ 249,90", tamanho: "GG", destaque: true,
     resumo: "Pura fofura alienígena com 30 cm.",
-    descricao: "Feito à mão com orelhas grandes e muito charme havaiano. Algodão 100% sustentável, 30 cm de altura.",
+    descricao: "Feito à mão com orelhas grandes e muito charme havaiano. Algodão 100% sustentável, 30 cm de altura. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
     fotos: ["img/produtos/stitch-lilo-and-stitch/01.jpg"], sumup: "stitch-lilo-and-stitch"
   },
   {
     id: "saitama", nome: "Saitama", serie: "One Punch Man", categorias: ["amigurumi", "nerd"], preco: "R$ 59,90", tamanho: "PP",
     resumo: "O herói mais forte do universo, versão fofinha. 10 cm.",
-    descricao: "Detalhes fiéis e muita personalidade careca. Algodão 100% sustentável, 10 cm de altura.",
+    descricao: "Detalhes fiéis e muita personalidade careca. Algodão 100% sustentável, 10 cm de altura. Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.",
     fotos: ["img/produtos/saitama-one-punch-man/01.jpg"], sumup: "saitama-one-punch-man"
   }
 ];
@@ -283,9 +283,9 @@ window.AMIGU_GALERIA_TOTAL = 63;
 /* Tabela de preços por tamanho. "foto" = número da foto da galeria usada como exemplo
    (sem foto, aparece o mascote). "aPartir" = mostra "a partir de". */
 window.AMIGU_TAMANHOS = [
-  { id: "CP", tipo: "chaveiro", nome: "Chaveiro P", medida: "até 6 cm", preco: "R$ 25,90", emBreve: true },
-  { id: "CM", tipo: "chaveiro", nome: "Chaveiro M", medida: "7 a 9 cm", preco: "R$ 39,90", emBreve: true },
-  { id: "CG", tipo: "chaveiro", nome: "Chaveiro G", medida: "10 a 12 cm", preco: "R$ 49,90", emBreve: true },
+  { id: "CP", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro P", medida: "até 6 cm", preco: "R$ 25,90", emBreve: true, sumup: "chaveiro-amigurumi-p-ate-6-cm" },
+  { id: "CM", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro M", medida: "7 a 9 cm", preco: "R$ 39,90", emBreve: true, sumup: "chaveiro-amigurumi-m-7-a-9-cm" },
+  { id: "CG", tipo: "chaveiro", nota: "Personagem à sua escolha: é só escrever qual você quer no campo de observação ao finalizar a compra.", nome: "Chaveiro G", medida: "10 a 12 cm", preco: "R$ 49,90", emBreve: true, sumup: "chaveiro-amigurumi-g-10-a-12-cm" },
   { id: "PP", tipo: "amigurumi", nome: "Amigurumi PP", medida: "até 10 cm", preco: "R$ 59,90", foto: 2 },
   { id: "P", tipo: "amigurumi", nome: "Amigurumi P", medida: "11 a 15 cm", preco: "R$ 89,90", foto: 17 },
   { id: "M", tipo: "amigurumi", nome: "Amigurumi M", medida: "16 a 20 cm", preco: "R$ 129,90", foto: 8 },
