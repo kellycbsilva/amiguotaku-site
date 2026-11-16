@@ -233,7 +233,7 @@ window.AMIGU_PRODUTOS = [
 
   /* ---------------- Amigurumis do site atual ---------------- */
   {
-    id: "charizard", nome: "Charizard", serie: "Pokémon", categorias: ["amigurumi", "nerd"], preco: "R$ 179,90", tamanho: "G", destaque: true,
+    id: "charizard", nome: "Charizard", serie: "Pokémon", categorias: ["amigurumi", "nerd"], preco: "R$ 129,90", tamanho: "M", destaque: true,
     resumo: "O dragão mais icônico de Kanto em crochê. 20 cm.",
     descricao: "Feito à mão com asas, cauda em chamas e muita nostalgia. Algodão 100% sustentável, 20 cm de altura.",
     fotos: ["img/produtos/charizard-pokemon/01.jpg"], sumup: "charizard-pokemon"
@@ -298,7 +298,7 @@ window.AMIGU_GALERIA_TAMANHO = {
   22: "M", 23: "G", 24: "G", 25: "M", 26: "G", 27: "M", 28: "G", 29: "M", 30: "G", 31: "G", 32: "P", 33: "P",
   34: "P", 35: "P", 36: "M", 37: "M", 38: "M", 39: "P", 40: "G", 41: "M", 42: "M", 43: "P",
   44: "G", 45: "G", 46: "G", 47: "M", 48: "M", 49: "GG", 50: "GG", 51: "GG", 52: "GG", 53: "G",
-  54: "M", 55: "P", 56: "P", 57: "G", 58: "G", 59: "G", 60: "P", 61: "M", 62: "P", 63: "GG"
+  54: "M", 55: "P", 56: "P", 57: "G", 58: "M", 59: "M", 60: "P", 61: "M", 62: "P", 63: "GG"
 };
 
 /* Classes de RPG do mascote (img/classes/<id>.jpg) */
